@@ -1,0 +1,996 @@
+{
+  "platform": "gatsby",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../static",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic_plasmic_basic_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "displayName": "hostless-iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "displayName": "hostless-html-video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "displayName": "hostless-embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "displayName": "hostless-data-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "zlBHsvkFlN",
+          "name": "ConditionGuard",
+          "displayName": "hostless-condition-guard",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "K-mWGqrHefEp",
+          "name": "SideEffect",
+          "displayName": "hostless-side-effect",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "SpkzmXJqg27p",
+          "name": "Timer",
+          "displayName": "hostless-timer",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "seaQhLVS4bbjiGvJJrRwyL",
+      "projectApiToken": "nPw276qGsy9kISQCHrcRrsj3Y9Yva9TMyYKNUpoOMOHgRj1A51qOC6LMB2185QlA52K87n32oQJHSi5be9w",
+      "projectName": "LIBRARY Plasmic Color + Type",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [],
+      "customFunctions": []
+    },
+    {
+      "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+      "projectApiToken": "cmU1Cv6fVH13SnBHOsdqgl4DvarmBiHk7qYKS3H4EkQ3mskdI1HusOn5v5HXUmyRzzs8Y2mjA8SThpRkr4t4tA",
+      "projectName": "Tekkou Studios",
+      "version": "latest",
+      "cssFilePath": "plasmic/tekkou_studios/plasmic_tekkou_studios.module.css",
+      "components": [
+        {
+          "id": "U2xBTGhaBJVBc",
+          "name": "TekkouStudios",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicTekkouStudios.jsx",
+          "importSpec": {
+            "modulePath": "../pages/index.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicTekkouStudios.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        },
+        {
+          "id": "0iK5TiKaPB5mq",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicHeader.jsx",
+          "importSpec": {
+            "modulePath": "Header.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "t1MJfdGbdT9xN",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicFooter.jsx",
+          "importSpec": {
+            "modulePath": "Footer.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "NbzX9R2oE7Tr_C",
+          "name": "FeatureItem",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicFeatureItem.jsx",
+          "importSpec": {
+            "modulePath": "FeatureItem.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicFeatureItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "m9xraW-kpySFIb",
+          "name": "ProductCard",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicProductCard.jsx",
+          "importSpec": {
+            "modulePath": "ProductCard.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicProductCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "tu-boLyMtFKrN1",
+          "name": "LinkButton",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicLinkButton.jsx",
+          "importSpec": {
+            "modulePath": "LinkButton.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicLinkButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "oxTB6Z3xMqtire",
+          "name": "IconLink",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicIconLink.jsx",
+          "importSpec": {
+            "modulePath": "IconLink.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicIconLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "tHKra2qqJQ6tmD",
+          "name": "MenuButton",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicMenuButton.jsx",
+          "importSpec": {
+            "modulePath": "MenuButton.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicMenuButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "d4PABHe6TTTeYg",
+          "name": "BlogPost",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicBlogPost.jsx",
+          "importSpec": {
+            "modulePath": "BlogPost.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicBlogPost.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "hkLb2r8c9IygmP",
+          "name": "Ratings",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicRatings.jsx",
+          "importSpec": {
+            "modulePath": "Ratings.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicRatings.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ylZMI3OH89meH3",
+          "name": "ProductCarousel",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicProductCarousel.jsx",
+          "importSpec": {
+            "modulePath": "ProductCarousel.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicProductCarousel.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Qa7nsTbq1o40Yw",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicButton.jsx",
+          "importSpec": {
+            "modulePath": "Button.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "sTLuxFVr-H4nw4",
+          "name": "ProductRow",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicProductRow.jsx",
+          "importSpec": {
+            "modulePath": "ProductRow.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicProductRow.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ZkwPOk_Wh80Mtk",
+          "name": "Store",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicStore.jsx",
+          "importSpec": {
+            "modulePath": "../pages/store.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicStore.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/store"
+        },
+        {
+          "id": "DYJN_6hRhobBcR",
+          "name": "Header2",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicHeader2.jsx",
+          "importSpec": {
+            "modulePath": "Header2.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicHeader2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "_joj0brhT1vpRP",
+          "name": "Faq",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicFaq.jsx",
+          "importSpec": {
+            "modulePath": "../pages/faq.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicFaq.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/faq"
+        },
+        {
+          "id": "I5Q14DJIrh8zkA",
+          "name": "AboutUs",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicAboutUs.jsx",
+          "importSpec": {
+            "modulePath": "../pages/about.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicAboutUs.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/about"
+        },
+        {
+          "id": "uRTKM-ijPWR4nr",
+          "name": "FaqFooter",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicFaqFooter.jsx",
+          "importSpec": {
+            "modulePath": "FaqFooter.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicFaqFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "G60v482VmtxDcA",
+          "name": "SinglePage",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicSinglePage.jsx",
+          "importSpec": {
+            "modulePath": "../pages/product.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicSinglePage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/product"
+        },
+        {
+          "id": "e6bVodJbS1czUe",
+          "name": "Header3",
+          "type": "managed",
+          "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+          "renderModuleFilePath": "plasmic/tekkou_studios/PlasmicHeader3.jsx",
+          "importSpec": {
+            "modulePath": "Header3.jsx"
+          },
+          "cssFilePath": "plasmic/tekkou_studios/PlasmicHeader3.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "uBQj0VcGzD5tDo",
+          "name": "SearchIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Search.jsx"
+        },
+        {
+          "id": "RbLP5HAHZUaGyo",
+          "name": "CogIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Cog.jsx"
+        },
+        {
+          "id": "AuSpZZwEGypwrX",
+          "name": "ShoppingCartIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__ShoppingCart.jsx"
+        },
+        {
+          "id": "37S-8gOxxQIavq",
+          "name": "TimesIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Times.jsx"
+        },
+        {
+          "id": "JEvDSj69pW6fia",
+          "name": "BarsIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Bars.jsx"
+        },
+        {
+          "id": "c8uTbOUXWHzJZh",
+          "name": "LogoIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Logo.jsx"
+        },
+        {
+          "id": "EFzy9jC7H7FxUN",
+          "name": "SphereIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Sphere.jsx"
+        },
+        {
+          "id": "B2nE5Ge87yV_Rf",
+          "name": "FacebookIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Facebook.jsx"
+        },
+        {
+          "id": "06v1kD7a_FeGh8",
+          "name": "InstagramIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Instagram.jsx"
+        },
+        {
+          "id": "jmf_w2EQvmPT1F",
+          "name": "LinkedinIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Linkedin.jsx"
+        },
+        {
+          "id": "nyR59Yx3nY7AIz",
+          "name": "LocationArrowIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LocationArrow.jsx"
+        },
+        {
+          "id": "Cr6hbjt0LMQEx7",
+          "name": "StarOIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__StarO.jsx"
+        },
+        {
+          "id": "jTGdRMXs1nMrEq",
+          "name": "StarIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Star.jsx"
+        },
+        {
+          "id": "0HqRSH23PloC57",
+          "name": "ExpandIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Expand.jsx"
+        },
+        {
+          "id": "hYCIyKspFIzpFa",
+          "name": "HeartOIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__HeartO.jsx"
+        },
+        {
+          "id": "w1RAqtJJ1oY9Ym",
+          "name": "DotCircleOIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__DotCircleO.jsx"
+        },
+        {
+          "id": "L1SdOiuZ4AdR5R",
+          "name": "CircleOIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__CircleO.jsx"
+        },
+        {
+          "id": "pQ3vunFoZEff5k",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Checksvg.jsx"
+        },
+        {
+          "id": "U4HHM8rDMXQhVG",
+          "name": "LogoWhitesvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LogoWhitesvg.jsx"
+        },
+        {
+          "id": "3rEVIBikc50PR2",
+          "name": "ButtonArrowIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__ButtonArrow.jsx"
+        },
+        {
+          "id": "GBu9tlyNK1_c67",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Icon.jsx"
+        },
+        {
+          "id": "Ky2PRoiXaPcR0A",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Icon2.jsx"
+        },
+        {
+          "id": "0VwAWSlI1cyKAc",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Icon3.jsx"
+        },
+        {
+          "id": "bAtAb5ADu5cG8P",
+          "name": "QuotessvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Quotessvg.jsx"
+        },
+        {
+          "id": "kBxn1sGYSYlCDu",
+          "name": "Logo4SvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Logo4Svg.jsx"
+        },
+        {
+          "id": "tjrr1vnuvCrQME",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Icon4.jsx"
+        },
+        {
+          "id": "P-DXlP8R2hYuyc",
+          "name": "DotSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__DotSvgrepoComsvg.jsx"
+        },
+        {
+          "id": "P3ttIOyDegLRvV",
+          "name": "DotSvgrepoCom1SvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__DotSvgrepoCom1Svg.jsx"
+        },
+        {
+          "id": "z2oKaxycfF69DK",
+          "name": "LocationSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LocationSvgrepoComsvg.jsx"
+        },
+        {
+          "id": "sTg6IS6-2Zvsfi",
+          "name": "LocationSvgrepoCom1SvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LocationSvgrepoCom1Svg.jsx"
+        },
+        {
+          "id": "AXOi-FrNa-5tp7",
+          "name": "LeftArrowSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LeftArrowSvgrepoComsvg.jsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "_7c6faz7HsvzUJ",
+          "name": "plasmic",
+          "filePath": "plasmic/tekkou_studios/images/plasmic.png"
+        },
+        {
+          "id": "wP3e6VBobZg_XT",
+          "name": "adidas",
+          "filePath": "plasmic/tekkou_studios/images/adidas.png"
+        },
+        {
+          "id": "ibgwVFs1nGuwJB",
+          "name": "hm",
+          "filePath": "plasmic/tekkou_studios/images/hm.png"
+        },
+        {
+          "id": "b70FlI1Ij5eeDw",
+          "name": "kappa",
+          "filePath": "plasmic/tekkou_studios/images/kappa.png"
+        },
+        {
+          "id": "QQ5m0rOc1fK9zv",
+          "name": "lacoste",
+          "filePath": "plasmic/tekkou_studios/images/lacoste.png"
+        },
+        {
+          "id": "btwPEu6Om5E0cj",
+          "name": "levis",
+          "filePath": "plasmic/tekkou_studios/images/levis.png"
+        },
+        {
+          "id": "e3adVKnEdWhdSK",
+          "name": "b1",
+          "filePath": "plasmic/tekkou_studios/images/b1.jpg"
+        },
+        {
+          "id": "u3LpTcnW-sQ4_N",
+          "name": "b2",
+          "filePath": "plasmic/tekkou_studios/images/b2.jpg"
+        },
+        {
+          "id": "jjuBMEbCNjmCwe",
+          "name": "b3",
+          "filePath": "plasmic/tekkou_studios/images/b3.jpg"
+        },
+        {
+          "id": "Ljjpt--yHBvqm2",
+          "name": "f1",
+          "filePath": "plasmic/tekkou_studios/images/f1.jpg"
+        },
+        {
+          "id": "b5kNE2nkQLU4YI",
+          "name": "f2",
+          "filePath": "plasmic/tekkou_studios/images/f2.jpg"
+        },
+        {
+          "id": "Z1Tdfnxb3V4h5T",
+          "name": "f3",
+          "filePath": "plasmic/tekkou_studios/images/f3.jpg"
+        },
+        {
+          "id": "UpCxJ-ZtQKBmwy",
+          "name": "f4",
+          "filePath": "plasmic/tekkou_studios/images/f4.jpg"
+        },
+        {
+          "id": "azT4fj3IdWmc9A",
+          "name": "table-banner",
+          "filePath": "plasmic/tekkou_studios/images/tableBanner.jpg"
+        },
+        {
+          "id": "7EJsSNHSmU1JZ-",
+          "name": "arrivals1",
+          "filePath": "plasmic/tekkou_studios/images/arrivals1.png"
+        },
+        {
+          "id": "p7wYPfUnm4C6vY",
+          "name": "arrivals2",
+          "filePath": "plasmic/tekkou_studios/images/arrivals2.png"
+        },
+        {
+          "id": "Iwkn92CC3Xjsh5",
+          "name": "arrivals3",
+          "filePath": "plasmic/tekkou_studios/images/arrivals3.png"
+        },
+        {
+          "id": "A8jARkOP3agYR2",
+          "name": "arrivals4",
+          "filePath": "plasmic/tekkou_studios/images/arrivals4.png"
+        },
+        {
+          "id": "y4a1oBZ6s1zRYd",
+          "name": "arrivals5",
+          "filePath": "plasmic/tekkou_studios/images/arrivals5.png"
+        },
+        {
+          "id": "i-ePFxs0qQ2lU7",
+          "name": "arrivals6",
+          "filePath": "plasmic/tekkou_studios/images/arrivals6.png"
+        },
+        {
+          "id": "4AvHJ-sKdA8EAz",
+          "name": "arrivals7",
+          "filePath": "plasmic/tekkou_studios/images/arrivals7.png"
+        },
+        {
+          "id": "O75IqPtExXPRHk",
+          "name": "arrivals8",
+          "filePath": "plasmic/tekkou_studios/images/arrivals8.png"
+        },
+        {
+          "id": "QueztHCQFe1Wzz",
+          "name": "slider1",
+          "filePath": "plasmic/tekkou_studios/images/slider1.png"
+        },
+        {
+          "id": "zKp5iF998uefJf",
+          "name": "slider2",
+          "filePath": "plasmic/tekkou_studios/images/slider2.png"
+        },
+        {
+          "id": "4rFjWxyAyS8LLD",
+          "name": "slider3",
+          "filePath": "plasmic/tekkou_studios/images/slider3.png"
+        },
+        {
+          "id": "e_jnXhoslVm46Y",
+          "name": "pawel-czerwinski-qzaIDFtzcZ0-unsplash.jpg",
+          "filePath": "plasmic/tekkou_studios/images/pawelCzerwinskiQzaIdFtzcZ0Unsplashjpg.jpg"
+        },
+        {
+          "id": "UZ1-tOLqvavHIn",
+          "name": "sabrina-mazzeo-5jvYp-BjzQA-unsplash.jpg",
+          "filePath": "plasmic/tekkou_studios/images/sabrinaMazzeo5JvYpBjzQaUnsplashjpg.jpg"
+        },
+        {
+          "id": "qjqekLbgXUbbzS",
+          "name": "annie-spratt-VDXtVYJVj7A-unsplash.jpg",
+          "filePath": "plasmic/tekkou_studios/images/annieSprattVdXtVyjVj7AUnsplashjpg.jpg"
+        },
+        {
+          "id": "RiBhe2I8SONeKh",
+          "name": "yavor-punchev-iSHwa3EaMlo-unsplash.jpg",
+          "filePath": "plasmic/tekkou_studios/images/yavorPunchevISHwa3EaMloUnsplashjpg.jpg"
+        },
+        {
+          "id": "u3z8jgzcZrmHl-",
+          "name": "galina-n-miziNqvJx5M-unsplash.jpg",
+          "filePath": "plasmic/tekkou_studios/images/galinaNMiziNqvJx5MUnsplashjpg.jpg"
+        },
+        {
+          "id": "YEIKuc4Us-uOc5",
+          "name": "igor-son-FV_PxCqgtwc-unsplash.jpg",
+          "filePath": "plasmic/tekkou_studios/images/igorSonFvPxCqgtwcUnsplashjpg.jpg"
+        },
+        {
+          "id": "F1Dc1rqcLUfMdJ",
+          "name": "scott-webb-oRWRlTgBrPo-unsplash.jpg",
+          "filePath": "plasmic/tekkou_studios/images/scottWebbORwRlTgBrPoUnsplashjpg.jpg"
+        },
+        {
+          "id": "QR2sCt8irZr_xZ",
+          "name": "freddie-marriage-UcfKYTan-LU-unsplash.jpg",
+          "filePath": "plasmic/tekkou_studios/images/freddieMarriageUcfKyTanLuUnsplashjpg.jpg"
+        },
+        {
+          "id": "Sf8i_Yobzn6rJp",
+          "name": "header (1).jpg",
+          "filePath": "plasmic/tekkou_studios/images/header1Jpg.png"
+        },
+        {
+          "id": "xJ6Q3vV_MRM0GT",
+          "name": "plant1-featured.jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant1Featuredjpg.png"
+        },
+        {
+          "id": "t2yarasV6KLkUc",
+          "name": "plant2-featured.jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant2Featuredjpg.png"
+        },
+        {
+          "id": "tiViCTWpbB5dd_",
+          "name": "plant5-featured.jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant5Featuredjpg.png"
+        },
+        {
+          "id": "IEz5kdu77KUzPS",
+          "name": "plant9-featured.jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant9Featuredjpg.png"
+        },
+        {
+          "id": "Wyp-oSqMWKLljC",
+          "name": "plant6.jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant6Jpg.png"
+        },
+        {
+          "id": "4wnEmY0kt_T5-t",
+          "name": "plant1.jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant1Jpg.png"
+        },
+        {
+          "id": "LppZ16jixs6s_m",
+          "name": "plant7.jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant7Jpg.png"
+        },
+        {
+          "id": "Y7Rl-FovmeoVvz",
+          "name": "plant5.jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant5Jpg.png"
+        },
+        {
+          "id": "drX__I302mcggq",
+          "name": "plant4 (1).jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant41Jpg.png"
+        },
+        {
+          "id": "Y8qgmNoCoGRaU8",
+          "name": "plant3 (1).jpg",
+          "filePath": "plasmic/tekkou_studios/images/plant31Jpg.png"
+        },
+        {
+          "id": "BU_UZlDvLXdwOT",
+          "name": "plant9.webp",
+          "filePath": "plasmic/tekkou_studios/images/plant9Webp.webp"
+        },
+        {
+          "id": "TWEZ09oFzcfPxW",
+          "name": "plant2.webp",
+          "filePath": "plasmic/tekkou_studios/images/plant2Webp.webp"
+        },
+        {
+          "id": "V_SvYGMiuzEbT-",
+          "name": "promo.webp",
+          "filePath": "plasmic/tekkou_studios/images/promowebp.webp"
+        },
+        {
+          "id": "-65mljIkpZoDa8",
+          "name": "leaf.svg",
+          "filePath": "plasmic/tekkou_studios/images/leafsvg.svg"
+        },
+        {
+          "id": "SO_QSTxcS_KSrf",
+          "name": "leaf-light-grey.svg",
+          "filePath": "plasmic/tekkou_studios/images/leafLightGreysvg.svg"
+        },
+        {
+          "id": "5P_FeRGfvIYQJO",
+          "name": "nan_talk.webp",
+          "filePath": "plasmic/tekkou_studios/images/nanTalkwebp.webp"
+        },
+        {
+          "id": "jkVhXJc87CmYn_",
+          "name": "team.webp",
+          "filePath": "plasmic/tekkou_studios/images/teamwebp.webp"
+        },
+        {
+          "id": "VqP2SYwnbYkHVb",
+          "name": "header (3).webp",
+          "filePath": "plasmic/tekkou_studios/images/header3Webp.webp"
+        },
+        {
+          "id": "fufi_Y9RNCpPCy",
+          "name": "plant6-lg.webp",
+          "filePath": "plasmic/tekkou_studios/images/plant6Lgwebp.webp"
+        },
+        {
+          "id": "INQISgpWPc1_7O",
+          "name": "header (5).jpg",
+          "filePath": "plasmic/tekkou_studios/images/header5Jpg.jpg"
+        },
+        {
+          "id": "GLG-jscswgN6CB",
+          "name": "header-banner.jpg",
+          "filePath": "plasmic/tekkou_studios/images/headerBannerjpg.jpg"
+        },
+        {
+          "id": "NmbdSsN7C4xrgZ",
+          "name": "header-banner-mobile.jpg",
+          "filePath": "plasmic/tekkou_studios/images/headerBannerMobilejpg.jpg"
+        },
+        {
+          "id": "DBkCf3AHj",
+          "name": "Sugarcreek Logo Full.png",
+          "filePath": "plasmic/tekkou_studios/images/sugarcreekLogoFullpng.png"
+        },
+        {
+          "id": "q0IuVAjTv",
+          "name": "CoverArt2.png",
+          "filePath": "plasmic/tekkou_studios/images/coverArt2Png.png"
+        },
+        {
+          "id": "SAZ6PEKTP",
+          "name": "PosterSizeWallpaper.png",
+          "filePath": "plasmic/tekkou_studios/images/posterSizeWallpaperpng.png"
+        },
+        {
+          "id": "KXD4z3Dte",
+          "name": "TrailerThumbnail.png",
+          "filePath": "plasmic/tekkou_studios/images/trailerThumbnailpng.png"
+        },
+        {
+          "id": "5hrFBOIeg",
+          "name": "vlcsnap-2022-09-12-00h34m41s482.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2022091200H34M41S482Png.png"
+        },
+        {
+          "id": "N2cw6cRE1",
+          "name": "vlcsnap-2022-09-12-00h35m29s037.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2022091200H35M29S037Png.png"
+        },
+        {
+          "id": "2waI7KYxM",
+          "name": "vlcsnap-2022-09-12-00h37m52s252.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2022091200H37M52S252Png.png"
+        },
+        {
+          "id": "m1TddFjyY",
+          "name": "FullArtCharlotteRoom.png",
+          "filePath": "plasmic/tekkou_studios/images/fullArtCharlotteRoompng.png"
+        },
+        {
+          "id": "gQ3zp1ER7",
+          "name": "vlcsnap-2022-09-12-00h35m00s495.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2022091200H35M00S495Png.png"
+        },
+        {
+          "id": "KcqEZmlM3",
+          "name": "vlcsnap-2022-12-02-13h46m12s141.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2022120213H46M12S141Png.png"
+        },
+        {
+          "id": "tirv03UFV",
+          "name": "CPEddie.png",
+          "filePath": "plasmic/tekkou_studios/images/cpEddiepng.png"
+        },
+        {
+          "id": "wzK18mKug",
+          "name": "CPFelix.png",
+          "filePath": "plasmic/tekkou_studios/images/cpFelixpng.png"
+        },
+        {
+          "id": "DglUpQH0U",
+          "name": "CPDarby.png",
+          "filePath": "plasmic/tekkou_studios/images/cpDarbypng.png"
+        },
+        {
+          "id": "iz2k4eDfP",
+          "name": "CPCharlotte.png",
+          "filePath": "plasmic/tekkou_studios/images/cpCharlottepng.png"
+        },
+        {
+          "id": "RnjrXdekS",
+          "name": "Faces.png",
+          "filePath": "plasmic/tekkou_studios/images/facespng.png"
+        },
+        {
+          "id": "jWZ_wq6Co",
+          "name": "LogoWhite.png",
+          "filePath": "plasmic/tekkou_studios/images/logoWhitepng.png"
+        },
+        {
+          "id": "MElD3RVyO",
+          "name": "vlcsnap-2023-05-23-17h36m59s219.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2023052317H36M59S219Png.png"
+        },
+        {
+          "id": "tLYeAm_yx",
+          "name": "vlcsnap-2022-09-12-00h37m57s255.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2022091200H37M57S255Png.png"
+        },
+        {
+          "id": "DfU4pMeQG",
+          "name": "vlcsnap-2023-05-16-21h15m04s666.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2023051621H15M04S666Png.png"
+        },
+        {
+          "id": "-lCEg1c7k",
+          "name": "vlcsnap-2023-04-05-02h20m56s405.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2023040502H20M56S405Png.png"
+        },
+        {
+          "id": "2mWgS6qoX0kP",
+          "name": "TekkouLogoSeptember2023-4.png",
+          "filePath": "plasmic/tekkou_studios/images/tekkouLogoSeptember20234Png.png"
+        },
+        {
+          "id": "JgWZxojzGDue",
+          "name": "vlcsnap-2023-11-07-17h04m07s779.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2023110717H04M07S779Png.png"
+        },
+        {
+          "id": "7iH1gIvZnfRZ",
+          "name": "Sugarcreek Logo Shadow.png",
+          "filePath": "plasmic/tekkou_studios/images/sugarcreekLogoShadowpng.png"
+        },
+        {
+          "id": "IYJtPZ5c1EYq",
+          "name": "NENStarshineEditionLogoText.png",
+          "filePath": "plasmic/tekkou_studios/images/nenStarshineEditionLogoTextpng.png"
+        },
+        {
+          "id": "Lf_fGCKgYYiu",
+          "name": "screenshot (33).png",
+          "filePath": "plasmic/tekkou_studios/images/screenshot33Png.png"
+        },
+        {
+          "id": "0hMl1GXTxKk8",
+          "name": "UgneStill.png",
+          "filePath": "plasmic/tekkou_studios/images/ugneStillpng.png"
+        },
+        {
+          "id": "7fz0DKFJPKcW",
+          "name": "screenshot (37).png",
+          "filePath": "plasmic/tekkou_studios/images/screenshot37Png.png"
+        },
+        {
+          "id": "ujDPtU2aQWqb",
+          "name": "vlcsnap-2023-11-07-17h50m56s704.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2023110717H50M56S704Png.png"
+        },
+        {
+          "id": "SWuzSRjSEAjQ",
+          "name": "vlcsnap-2023-11-07-18h09m08s497.png",
+          "filePath": "plasmic/tekkou_studios/images/vlcsnap2023110718H09M08S497Png.png"
+        },
+        {
+          "id": "bU8IgN_zCOOO",
+          "name": "FullArtHangoutCityPark.png",
+          "filePath": "plasmic/tekkou_studios/images/fullArtHangoutCityParkpng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "PxIniaM7IT",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "apa_qQV9S3",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "ZNo6oijq3JlNiY",
+        "name": "Screen",
+        "projectId": "pxrbsjdrcYiKeJrrydSqC9",
+        "contextFilePath": "plasmic/tekkou_studios/PlasmicGlobalVariant__Screen.jsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "gatsbyConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.325",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.325/dist/plasmic.schema.json"
+}
