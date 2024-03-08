@@ -9,14 +9,17 @@
 // Plasmic Project: pxrbsjdrcYiKeJrrydSqC9
 // Component: ylZMI3OH89meH3
 import * as React from "react";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
+  PlasmicIcon as PlasmicIcon__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant,
+  useCurrentUser,
+  useDollarState
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LinkButton from "../../LinkButton"; // plasmic-import: tu-boLyMtFKrN1/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
@@ -40,10 +43,10 @@ function PlasmicProductCarousel__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -56,7 +59,7 @@ function PlasmicProductCarousel__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -79,7 +82,7 @@ function PlasmicProductCarousel__RenderFunc(props) {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox___4ZAT)}>
-        <p.Stack
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__wtozG, {
@@ -140,7 +143,7 @@ function PlasmicProductCarousel__RenderFunc(props) {
               "Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente."
             }
           </div>
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox___6RoT)}
@@ -152,15 +155,15 @@ function PlasmicProductCarousel__RenderFunc(props) {
               text={"\u2295 Add to cart"}
               type={"solidOrange"}
             />
-          </p.Stack>
-        </p.Stack>
+          </Stack__>
+        </Stack__>
       </div>
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__v81Bk)}
       >
-        <p.PlasmicIcon
+        <PlasmicIcon__
           PlasmicIconType={
             hasVariant($state, "slider", "third")
               ? CircleOIcon
@@ -183,7 +186,7 @@ function PlasmicProductCarousel__RenderFunc(props) {
           role={"img"}
         />
 
-        <p.PlasmicIcon
+        <PlasmicIcon__
           PlasmicIconType={
             hasVariant($state, "slider", "second")
               ? DotCircleOIcon
@@ -209,7 +212,7 @@ function PlasmicProductCarousel__RenderFunc(props) {
           role={"img"}
         />
 
-        <p.PlasmicIcon
+        <PlasmicIcon__
           PlasmicIconType={
             hasVariant($state, "slider", "third") ? DotCircleOIcon : CircleOIcon
           }
@@ -222,7 +225,7 @@ function PlasmicProductCarousel__RenderFunc(props) {
           })}
           role={"img"}
         />
-      </p.Stack>
+      </Stack__>
     </div>
   );
 }

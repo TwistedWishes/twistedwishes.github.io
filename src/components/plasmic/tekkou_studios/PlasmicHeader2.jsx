@@ -10,15 +10,17 @@
 // Component: DYJN_6hRhobBcR
 import * as React from "react";
 import { Link } from "gatsby";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
+  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  hasVariant,
+  useCurrentUser
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import MenuButton from "../../MenuButton"; // plasmic-import: tHKra2qqJQ6tmD/component
 import IconLink from "../../IconLink"; // plasmic-import: oxTB6Z3xMqtire/component
 import { useScreenVariants as useScreenVariantszNo6Oijq3JlNiY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ZNo6oijq3JlNiY/globalVariant
@@ -44,15 +46,15 @@ function PlasmicHeader2__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });
   return (
-    <p.Stack
+    <Stack__
       as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
@@ -75,7 +77,7 @@ function PlasmicHeader2__RenderFunc(props) {
         className={classNames("__wab_instance", sty.menuButton)}
       />
 
-      <p.PlasmicLink
+      <PlasmicLink__
         className={classNames(projectcss.all, projectcss.a, sty.link__lVvU3)}
         component={Link}
         href={`/`}
@@ -85,13 +87,13 @@ function PlasmicHeader2__RenderFunc(props) {
           className={classNames(projectcss.all, sty.svg___6LiWd)}
           role={"img"}
         />
-      </p.PlasmicLink>
-      <p.Stack
+      </PlasmicLink__>
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__fsCl0)}
       >
-        <p.PlasmicLink
+        <PlasmicLink__
           className={classNames(
             projectcss.all,
             projectcss.a,
@@ -103,8 +105,8 @@ function PlasmicHeader2__RenderFunc(props) {
           platform={"gatsby"}
         >
           {"Store"}
-        </p.PlasmicLink>
-        <p.PlasmicLink
+        </PlasmicLink__>
+        <PlasmicLink__
           className={classNames(
             projectcss.all,
             projectcss.a,
@@ -116,8 +118,8 @@ function PlasmicHeader2__RenderFunc(props) {
           platform={"gatsby"}
         >
           {"About"}
-        </p.PlasmicLink>
-        <p.PlasmicLink
+        </PlasmicLink__>
+        <PlasmicLink__
           className={classNames(
             projectcss.all,
             projectcss.a,
@@ -129,9 +131,9 @@ function PlasmicHeader2__RenderFunc(props) {
           platform={"gatsby"}
         >
           {hasVariant(globalVariants, "screen", "mobile") ? "Faq" : "Faq"}
-        </p.PlasmicLink>
-      </p.Stack>
-      <p.Stack
+        </PlasmicLink__>
+      </Stack__>
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__vRsVg)}
@@ -161,8 +163,8 @@ function PlasmicHeader2__RenderFunc(props) {
             </React.Fragment>
           }
         />
-      </p.Stack>
-    </p.Stack>
+      </Stack__>
+    </Stack__>
   );
 }
 

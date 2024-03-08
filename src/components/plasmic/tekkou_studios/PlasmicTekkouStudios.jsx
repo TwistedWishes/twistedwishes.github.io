@@ -10,14 +10,17 @@
 // Component: U2xBTGhaBJVBc
 import * as React from "react";
 import { Link } from "gatsby";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  useCurrentUser
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import ProductCard from "../../ProductCard"; // plasmic-import: m9xraW-kpySFIb/component
@@ -94,10 +97,10 @@ function PlasmicTekkouStudios__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });
@@ -130,13 +133,13 @@ function PlasmicTekkouStudios__RenderFunc(props) {
             data-plasmic-override={overrides.header}
             className={classNames(projectcss.all, sty.header)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__t7Xv4)}
             >
               <div className={classNames(projectcss.all, sty.freeBox__xXgNn)}>
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__lhl8C)}
@@ -186,7 +189,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       "A new adventure from Tekkou Studios\nMore info coming soon..."
                     }
                   </div>
-                  <p.PlasmicImg
+                  <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__cuAH)}
                     displayHeight={"297px"}
@@ -220,7 +223,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       </span>
                     </React.Fragment>
                   </div>
-                  <p.PlasmicImg
+                  <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img___36FV)}
                     displayHeight={"207px"}
@@ -257,7 +260,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__hNuQy)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__xaKVt)}
                       displayHeight={"auto"}
@@ -275,7 +278,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       }}
                     />
 
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__xb4M)}
                       displayHeight={"auto"}
@@ -296,7 +299,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   <div
                     className={classNames(projectcss.all, sty.freeBox___7M4Yu)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__bn0Ds)}
                       displayHeight={"auto"}
@@ -314,7 +317,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       }}
                     />
 
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__qjtbM)}
                       displayHeight={"auto"}
@@ -338,7 +341,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column___4M5Yy)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -362,12 +365,12 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                             {"Steam Page"}
                           </span>
                         </React.Fragment>
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column___2EwEj)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -391,12 +394,12 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                             {"Kickstarter"}
                           </span>
                         </React.Fragment>
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column__g0K1)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -418,16 +421,16 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                             {"Discord Server"}
                           </span>
                         </React.Fragment>
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                     </div>
                   </div>
-                </p.Stack>
-                <p.Stack
+                </Stack__>
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox___4ITeC)}
                 >
-                  <p.PlasmicImg
+                  <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__o7MUw)}
                     displayHeight={"365px"}
@@ -448,7 +451,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   <div
                     className={classNames(projectcss.all, sty.freeBox__yU7N)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__n2Yyx)}
                       displayHeight={"auto"}
@@ -466,7 +469,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       }}
                     />
 
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__u3Ox1)}
                       displayHeight={"auto"}
@@ -487,7 +490,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   <div
                     className={classNames(projectcss.all, sty.freeBox___0Xhw1)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__pYsU)}
                       displayHeight={"auto"}
@@ -505,7 +508,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       }}
                     />
 
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___5CnK6)}
                       displayHeight={"auto"}
@@ -529,7 +532,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column__npk6)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -553,12 +556,12 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                             {"Steam Page"}
                           </span>
                         </React.Fragment>
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                     </div>
                     <div
                       className={classNames(projectcss.all, sty.column__tlaPd)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -580,7 +583,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                             {"Discord Server"}
                           </span>
                         </React.Fragment>
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                     </div>
                   </div>
                   <div
@@ -650,9 +653,9 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       </span>
                     </React.Fragment>
                   </div>
-                </p.Stack>
+                </Stack__>
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__dWNkL)}>
               <h2
                 data-plasmic-name={"h2"}
@@ -667,7 +670,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 {"Top Collections"}
               </h2>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__xKZil)}
@@ -679,7 +682,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     sty.productCard__yv1Wb
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__ybcCy)}
                       displayHeight={"100%"}
@@ -717,7 +720,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     sty.productCard__hlvva
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__slmWr)}
                       displayHeight={"100%"}
@@ -755,7 +758,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     sty.productCard__fCrj
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__xkfzy)}
                       displayHeight={"100%"}
@@ -789,7 +792,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 <ProductCard
                   className={classNames("__wab_instance", sty.productCard__b5I)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__hvAdO)}
                       displayHeight={"100%"}
@@ -820,7 +823,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   title={"Product"}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <FeatureItem
               data-plasmic-name={"featureItem"}
               data-plasmic-override={overrides.featureItem}
@@ -838,7 +841,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 {"Featured Products"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__awT3T)}
@@ -891,7 +894,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     sty.productCard__w1Feb
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__p26Iw)}
                       displayHeight={"auto"}
@@ -929,7 +932,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     sty.productCard___0Eh9X
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__eTiU8)}
                       displayHeight={"auto"}
@@ -968,7 +971,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     sty.productCard___27TLb
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__kDe1P)}
                       displayHeight={"auto"}
@@ -999,7 +1002,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   withReviews={true}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox___1ZNpg)}>
               <div
                 className={classNames(
@@ -1011,7 +1014,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 {"Latest Blog"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__luk3)}
@@ -1020,7 +1023,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost___4WWi)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__keu)}
                       displayHeight={"auto"}
@@ -1043,7 +1046,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost__zDdQd)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__azpM8)}
                       displayHeight={"auto"}
@@ -1066,7 +1069,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost__qCbBs)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__xr68F)}
                       displayHeight={"auto"}
@@ -1085,13 +1088,13 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   }
                 />
               </div>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___9Aeu)}
             >
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__m6H2H)}
                 displayHeight={"60px"}
@@ -1108,7 +1111,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__ypYg7)}
                 displayHeight={"60px"}
@@ -1125,7 +1128,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__rhUtC)}
                 displayHeight={"60px"}
@@ -1142,7 +1145,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__zdjJl)}
                 displayHeight={"60px"}
@@ -1159,7 +1162,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__ypAak)}
                 displayHeight={"60px"}
@@ -1175,7 +1178,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   aspectRatio: undefined
                 }}
               />
-            </p.Stack>
+            </Stack__>
             <Footer
               data-plasmic-name={"footer"}
               data-plasmic-override={overrides.footer}

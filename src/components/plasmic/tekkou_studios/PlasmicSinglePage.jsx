@@ -10,15 +10,18 @@
 // Component: G60v482VmtxDcA
 import * as React from "react";
 import { Link } from "gatsby";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  hasVariant,
+  useCurrentUser
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Header3 from "../../Header3"; // plasmic-import: e6bVodJbS1czUe/component
 import Header2 from "../../Header2"; // plasmic-import: DYJN_6hRhobBcR/component
 import ProductCard from "../../ProductCard"; // plasmic-import: m9xraW-kpySFIb/component
@@ -79,10 +82,10 @@ function PlasmicSinglePage__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });
@@ -112,7 +115,7 @@ function PlasmicSinglePage__RenderFunc(props) {
         >
           <div className={classNames(projectcss.all, sty.freeBox__e1OEm)}>
             <div className={classNames(projectcss.all, sty.freeBox__j0ZjI)}>
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img___91T9X)}
                 displayHeight={"100%"}
@@ -137,8 +140,8 @@ function PlasmicSinglePage__RenderFunc(props) {
               />
 
               <div className={classNames(projectcss.all, sty.freeBox___1Wd3Z)}>
-                <p.Stack
-                  as={p.PlasmicLink}
+                <Stack__
+                  as={PlasmicLink__}
                   hasGap={true}
                   className={classNames(
                     projectcss.all,
@@ -164,15 +167,15 @@ function PlasmicSinglePage__RenderFunc(props) {
                       ? "see all products"
                       : "see all products"}
                   </div>
-                </p.Stack>
-                <p.Stack
+                </Stack__>
+                <Stack__
                   as={"div"}
                   data-plasmic-name={"foreground2"}
                   data-plasmic-override={overrides.foreground2}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.foreground2)}
                 >
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.columns__kqzTc)}
@@ -180,7 +183,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.column__zejOu)}
                     >
-                      <p.PlasmicImg
+                      <PlasmicImg__
                         alt={""}
                         className={classNames(sty.img__aBFkn)}
                         displayHeight={"auto"}
@@ -198,7 +201,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                         }}
                       />
                     </div>
-                    <p.Stack
+                    <Stack__
                       as={"div"}
                       hasGap={true}
                       className={classNames(projectcss.all, sty.column__vBfNo)}
@@ -255,8 +258,8 @@ function PlasmicSinglePage__RenderFunc(props) {
                             sty.freeBox__v094
                           )}
                         >
-                          <p.Stack
-                            as={p.PlasmicLink}
+                          <Stack__
+                            as={PlasmicLink__}
                             hasGap={true}
                             className={classNames(
                               projectcss.all,
@@ -285,12 +288,12 @@ function PlasmicSinglePage__RenderFunc(props) {
                                 ? "Discover"
                                 : "Add to cart"}
                             </div>
-                          </p.Stack>
+                          </Stack__>
                         </div>
                       </div>
-                    </p.Stack>
-                  </p.Stack>
-                </p.Stack>
+                    </Stack__>
+                  </Stack__>
+                </Stack__>
               </div>
             </div>
           </div>
@@ -299,7 +302,7 @@ function PlasmicSinglePage__RenderFunc(props) {
             data-plasmic-override={overrides.header}
             className={classNames(projectcss.all, sty.header)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__eQD4)}
@@ -311,7 +314,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                   className={classNames("__wab_instance", sty.header2)}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__w3KVh)}>
               <h2
                 className={classNames(
@@ -324,7 +327,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 {"Top Collections"}
               </h2>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns___8MrUh)}
@@ -336,7 +339,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     sty.productCard__q3YaG
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__wtzds)}
                       displayHeight={"100%"}
@@ -374,7 +377,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     sty.productCard__jxCyx
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___2C2O6)}
                       displayHeight={"100%"}
@@ -412,7 +415,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     sty.productCard__pbfxK
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__qiMos)}
                       displayHeight={"100%"}
@@ -449,7 +452,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     sty.productCard__m0Lq6
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___9VkGx)}
                       displayHeight={"100%"}
@@ -480,7 +483,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                   title={"Product"}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <FeatureItem
               data-plasmic-name={"featureItem"}
               data-plasmic-override={overrides.featureItem}
@@ -498,7 +501,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 {"Featured Products"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__sy6SS)}
@@ -551,7 +554,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     sty.productCard__cb2Vl
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__fMwQ3)}
                       displayHeight={"auto"}
@@ -589,7 +592,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     sty.productCard__r1Yw1
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___84Qlm)}
                       displayHeight={"auto"}
@@ -628,7 +631,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     sty.productCard__jiugh
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__ql7Yi)}
                       displayHeight={"auto"}
@@ -659,7 +662,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                   withReviews={true}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__gez70)}>
               <div
                 className={classNames(
@@ -671,7 +674,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 {"Latest Blog"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__qiNs2)}
@@ -680,7 +683,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost___2UtIq)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__ypzEx)}
                       displayHeight={"auto"}
@@ -703,7 +706,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost__eU5J3)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__v3NmC)}
                       displayHeight={"auto"}
@@ -726,7 +729,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost__zexfe)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__iakPl)}
                       displayHeight={"auto"}
@@ -745,13 +748,13 @@ function PlasmicSinglePage__RenderFunc(props) {
                   }
                 />
               </div>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___9Nd5Q)}
             >
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__kYnii)}
                 displayHeight={"60px"}
@@ -768,7 +771,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__deua3)}
                 displayHeight={"60px"}
@@ -785,7 +788,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__mwZ60)}
                 displayHeight={"60px"}
@@ -802,7 +805,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__e0Pz0)}
                 displayHeight={"60px"}
@@ -819,7 +822,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__vDmY)}
                 displayHeight={"60px"}
@@ -835,19 +838,19 @@ function PlasmicSinglePage__RenderFunc(props) {
                   aspectRatio: undefined
                 }}
               />
-            </p.Stack>
+            </Stack__>
             <Footer
               className={classNames("__wab_instance", sty.footer__bi2P)}
             />
           </div>
-          <p.Stack
+          <Stack__
             as={"div"}
             data-plasmic-name={"bigPlants"}
             data-plasmic-override={overrides.bigPlants}
             hasGap={true}
             className={classNames(projectcss.all, sty.bigPlants)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__oco5)}
@@ -862,18 +865,18 @@ function PlasmicSinglePage__RenderFunc(props) {
               >
                 {"Big plants"}
               </h2>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__xyW8V)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column___25Ssi)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__ucApC)}
                   displayHeight={"270px"}
@@ -898,7 +901,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__hh0Gr)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -909,7 +912,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Donec finibus"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -930,13 +933,13 @@ function PlasmicSinglePage__RenderFunc(props) {
                     {"$100.00"}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column___6Uh7I)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__iob8N)}
                   displayHeight={"270px"}
@@ -963,7 +966,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 <div
                   className={classNames(projectcss.all, sty.freeBox___7QY7C)}
                 >
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -974,7 +977,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Nulla suscipit"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -995,13 +998,13 @@ function PlasmicSinglePage__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__ddvx4)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__pva)}
                   displayHeight={"270px"}
@@ -1026,7 +1029,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__ktgyd)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1037,7 +1040,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Sed consectetur"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1058,7 +1061,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     {"$18.40 "}
                   </h5>
                 </div>
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img___5MZqB)}
                   displayHeight={"270px"}
@@ -1085,7 +1088,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                 <div
                   className={classNames(projectcss.all, sty.freeBox___7SH9Z)}
                 >
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1096,7 +1099,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Vestibulum eget"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1117,17 +1120,17 @@ function PlasmicSinglePage__RenderFunc(props) {
                     {"$220.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
-          <p.Stack
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
             as={"div"}
             data-plasmic-name={"cactuses"}
             data-plasmic-override={overrides.cactuses}
             hasGap={true}
             className={classNames(projectcss.all, sty.cactuses)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__mk6Py)}
@@ -1142,18 +1145,18 @@ function PlasmicSinglePage__RenderFunc(props) {
               >
                 {"Cactuses"}
               </h2>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__xMUgE)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__o2B5Q)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__d65It)}
                   displayHeight={"270px"}
@@ -1178,7 +1181,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__itPqm)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1189,7 +1192,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Cras molestie"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1210,13 +1213,13 @@ function PlasmicSinglePage__RenderFunc(props) {
                     {"$24.99"}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__tAi1T)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__lLewV)}
                   displayHeight={"270px"}
@@ -1241,7 +1244,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__yrhtd)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1252,7 +1255,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Curabitur eu tempor"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1273,13 +1276,13 @@ function PlasmicSinglePage__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__wTie)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__qZfPy)}
                   displayHeight={"270px"}
@@ -1304,7 +1307,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__lhgz5)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1315,7 +1318,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Fusce sagittis"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1336,13 +1339,13 @@ function PlasmicSinglePage__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__gj6Y7)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__vMkhL)}
                   displayHeight={"270px"}
@@ -1367,7 +1370,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__wOyGo)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1378,7 +1381,7 @@ function PlasmicSinglePage__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Integer porta"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1399,17 +1402,17 @@ function PlasmicSinglePage__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
-          <p.Stack
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
             as={"div"}
             data-plasmic-name={"bestSellers"}
             data-plasmic-override={overrides.bestSellers}
             hasGap={true}
             className={classNames(projectcss.all, sty.bestSellers)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__bdTlS)}
@@ -1424,13 +1427,13 @@ function PlasmicSinglePage__RenderFunc(props) {
               >
                 {"Related"}
               </h2>
-            </p.Stack>
+            </Stack__>
             <ProductRow
               data-plasmic-name={"productRow"}
               data-plasmic-override={overrides.productRow}
               className={classNames("__wab_instance", sty.productRow)}
             />
-          </p.Stack>
+          </Stack__>
           <Footer className={classNames("__wab_instance", sty.footer__k6H0X)} />
         </div>
       </div>

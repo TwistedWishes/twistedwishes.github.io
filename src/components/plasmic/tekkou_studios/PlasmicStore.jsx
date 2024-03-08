@@ -10,14 +10,17 @@
 // Component: ZkwPOk_Wh80Mtk
 import * as React from "react";
 import { Link } from "gatsby";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  useCurrentUser
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Header2 from "../../Header2"; // plasmic-import: DYJN_6hRhobBcR/component
 import ProductCard from "../../ProductCard"; // plasmic-import: m9xraW-kpySFIb/component
 import Ratings from "../../Ratings"; // plasmic-import: hkLb2r8c9IygmP/component
@@ -75,10 +78,10 @@ function PlasmicStore__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });
@@ -111,7 +114,7 @@ function PlasmicStore__RenderFunc(props) {
             data-plasmic-override={overrides.header}
             className={classNames(projectcss.all, sty.header)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__fvPYs)}
@@ -123,7 +126,7 @@ function PlasmicStore__RenderFunc(props) {
                   className={classNames("__wab_instance", sty.header2)}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__aUYdP)}>
               <h2
                 className={classNames(
@@ -136,7 +139,7 @@ function PlasmicStore__RenderFunc(props) {
                 {"Top Collections"}
               </h2>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__aqTd)}
@@ -148,7 +151,7 @@ function PlasmicStore__RenderFunc(props) {
                     sty.productCard__eGu9W
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__pdXtx)}
                       displayHeight={"100%"}
@@ -186,7 +189,7 @@ function PlasmicStore__RenderFunc(props) {
                     sty.productCard__wzsaS
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___0Ky2)}
                       displayHeight={"100%"}
@@ -224,7 +227,7 @@ function PlasmicStore__RenderFunc(props) {
                     sty.productCard___0Udqn
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__p2NH)}
                       displayHeight={"100%"}
@@ -261,7 +264,7 @@ function PlasmicStore__RenderFunc(props) {
                     sty.productCard__evJnt
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__ucc0I)}
                       displayHeight={"100%"}
@@ -292,7 +295,7 @@ function PlasmicStore__RenderFunc(props) {
                   title={"Product"}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <FeatureItem
               data-plasmic-name={"featureItem"}
               data-plasmic-override={overrides.featureItem}
@@ -310,7 +313,7 @@ function PlasmicStore__RenderFunc(props) {
                 {"Featured Products"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__viTsa)}
@@ -363,7 +366,7 @@ function PlasmicStore__RenderFunc(props) {
                     sty.productCard__mXrbr
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__vwXf7)}
                       displayHeight={"auto"}
@@ -401,7 +404,7 @@ function PlasmicStore__RenderFunc(props) {
                     sty.productCard___9Fqt
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__jQgX)}
                       displayHeight={"auto"}
@@ -440,7 +443,7 @@ function PlasmicStore__RenderFunc(props) {
                     sty.productCard__xooxP
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__pOvQr)}
                       displayHeight={"auto"}
@@ -471,7 +474,7 @@ function PlasmicStore__RenderFunc(props) {
                   withReviews={true}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__kUpPe)}>
               <div
                 className={classNames(
@@ -483,7 +486,7 @@ function PlasmicStore__RenderFunc(props) {
                 {"Latest Blog"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__kewHe)}
@@ -492,7 +495,7 @@ function PlasmicStore__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost__rbd8W)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__o8Phu)}
                       displayHeight={"auto"}
@@ -515,7 +518,7 @@ function PlasmicStore__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost__rmSQ)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__kcjyu)}
                       displayHeight={"auto"}
@@ -538,7 +541,7 @@ function PlasmicStore__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost__n6PWw)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__z5CTl)}
                       displayHeight={"auto"}
@@ -557,13 +560,13 @@ function PlasmicStore__RenderFunc(props) {
                   }
                 />
               </div>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___1Nf9B)}
             >
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__dV5Of)}
                 displayHeight={"60px"}
@@ -580,7 +583,7 @@ function PlasmicStore__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__eRrgZ)}
                 displayHeight={"60px"}
@@ -597,7 +600,7 @@ function PlasmicStore__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__oAoQ5)}
                 displayHeight={"60px"}
@@ -614,7 +617,7 @@ function PlasmicStore__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__ltKbf)}
                 displayHeight={"60px"}
@@ -631,7 +634,7 @@ function PlasmicStore__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img___3VtaZ)}
                 displayHeight={"60px"}
@@ -647,7 +650,7 @@ function PlasmicStore__RenderFunc(props) {
                   aspectRatio: undefined
                 }}
               />
-            </p.Stack>
+            </Stack__>
             <Footer
               className={classNames("__wab_instance", sty.footer___6Wjt1)}
             />
@@ -657,7 +660,7 @@ function PlasmicStore__RenderFunc(props) {
             data-plasmic-override={overrides.allProduct}
             className={classNames(projectcss.all, sty.allProduct)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__d3DlI)}
@@ -672,20 +675,20 @@ function PlasmicStore__RenderFunc(props) {
               >
                 {"All Products"}
               </h2>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns___1JLgb)}
             >
               <div className={classNames(projectcss.all, sty.column__wpLOq)}>
                 <div className={classNames(projectcss.all, sty.freeBox__zhNgk)}>
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__wq4B0)}
                   >
-                    <p.PlasmicLink
+                    <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
@@ -696,8 +699,8 @@ function PlasmicStore__RenderFunc(props) {
                       platform={"gatsby"}
                     >
                       {"Summer plants"}
-                    </p.PlasmicLink>
-                    <p.PlasmicLink
+                    </PlasmicLink__>
+                    <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
@@ -708,8 +711,8 @@ function PlasmicStore__RenderFunc(props) {
                       platform={"gatsby"}
                     >
                       {"Plants from Europe"}
-                    </p.PlasmicLink>
-                    <p.PlasmicLink
+                    </PlasmicLink__>
+                    <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
@@ -720,8 +723,8 @@ function PlasmicStore__RenderFunc(props) {
                       platform={"gatsby"}
                     >
                       {"Cactuses"}
-                    </p.PlasmicLink>
-                    <p.PlasmicLink
+                    </PlasmicLink__>
+                    <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
@@ -732,22 +735,22 @@ function PlasmicStore__RenderFunc(props) {
                       platform={"gatsby"}
                     >
                       {"Big plants"}
-                    </p.PlasmicLink>
-                  </p.Stack>
+                    </PlasmicLink__>
+                  </Stack__>
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.column___7IcQ9)}>
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.columns__rxW1N)}
                 >
-                  <p.Stack
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__wErJh)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___063S)}
                       displayHeight={"270px"}
@@ -776,7 +779,7 @@ function PlasmicStore__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__wMbHm)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -787,7 +790,7 @@ function PlasmicStore__RenderFunc(props) {
                         platform={"gatsby"}
                       >
                         {"Donec finibus"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                       <div
                         className={classNames(
                           projectcss.all,
@@ -808,13 +811,13 @@ function PlasmicStore__RenderFunc(props) {
                         {"$100.00"}
                       </h5>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__pudjb)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__tWzaY)}
                       displayHeight={"270px"}
@@ -843,7 +846,7 @@ function PlasmicStore__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__w7IHl)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -854,7 +857,7 @@ function PlasmicStore__RenderFunc(props) {
                         platform={"gatsby"}
                       >
                         {"Nulla suscipit"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                       <div
                         className={classNames(
                           projectcss.all,
@@ -875,13 +878,13 @@ function PlasmicStore__RenderFunc(props) {
                         {"$49.40 "}
                       </h5>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__dFp26)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__oeKr0)}
                       displayHeight={"270px"}
@@ -910,7 +913,7 @@ function PlasmicStore__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox___2RSv)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -921,7 +924,7 @@ function PlasmicStore__RenderFunc(props) {
                         platform={"gatsby"}
                       >
                         {"Vestibulum eget"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                       <div
                         className={classNames(
                           projectcss.all,
@@ -942,13 +945,13 @@ function PlasmicStore__RenderFunc(props) {
                         {"$220.40 "}
                       </h5>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__trQZa)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__a4BHp)}
                       displayHeight={"270px"}
@@ -977,7 +980,7 @@ function PlasmicStore__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__rDgvd)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -988,7 +991,7 @@ function PlasmicStore__RenderFunc(props) {
                         platform={"gatsby"}
                       >
                         {"Sed consectetur"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1009,13 +1012,13 @@ function PlasmicStore__RenderFunc(props) {
                         {"$18.40 "}
                       </h5>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__aGrbJ)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___5MhiP)}
                       displayHeight={"270px"}
@@ -1044,7 +1047,7 @@ function PlasmicStore__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__id3)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -1055,7 +1058,7 @@ function PlasmicStore__RenderFunc(props) {
                         platform={"gatsby"}
                       >
                         {"Donec finibus"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1076,13 +1079,13 @@ function PlasmicStore__RenderFunc(props) {
                         {"$100.00"}
                       </h5>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column___8Swaq)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__xpq7Q)}
                       displayHeight={"270px"}
@@ -1111,7 +1114,7 @@ function PlasmicStore__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__tGuKa)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -1122,7 +1125,7 @@ function PlasmicStore__RenderFunc(props) {
                         platform={"gatsby"}
                       >
                         {"Integer porta"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1143,13 +1146,13 @@ function PlasmicStore__RenderFunc(props) {
                         {"$49.40 "}
                       </h5>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column___2PZm)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__gOzQ)}
                       displayHeight={"270px"}
@@ -1178,7 +1181,7 @@ function PlasmicStore__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__dzvEu)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -1189,7 +1192,7 @@ function PlasmicStore__RenderFunc(props) {
                         platform={"gatsby"}
                       >
                         {"Cras molestie"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1210,13 +1213,13 @@ function PlasmicStore__RenderFunc(props) {
                         {"$24.99"}
                       </h5>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__heJm1)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__owL53)}
                       displayHeight={"270px"}
@@ -1245,7 +1248,7 @@ function PlasmicStore__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__oLh3)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -1256,7 +1259,7 @@ function PlasmicStore__RenderFunc(props) {
                         platform={"gatsby"}
                       >
                         {"Curabitur eu tempor"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1277,13 +1280,13 @@ function PlasmicStore__RenderFunc(props) {
                         {"$49.40 "}
                       </h5>
                     </div>
-                  </p.Stack>
-                  <p.Stack
+                  </Stack__>
+                  <Stack__
                     as={"div"}
                     hasGap={true}
                     className={classNames(projectcss.all, sty.column__nvpQp)}
                   >
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__t4Xy5)}
                       displayHeight={"270px"}
@@ -1312,7 +1315,7 @@ function PlasmicStore__RenderFunc(props) {
                     <div
                       className={classNames(projectcss.all, sty.freeBox__pAXoQ)}
                     >
-                      <p.PlasmicLink
+                      <PlasmicLink__
                         className={classNames(
                           projectcss.all,
                           projectcss.a,
@@ -1323,7 +1326,7 @@ function PlasmicStore__RenderFunc(props) {
                         platform={"gatsby"}
                       >
                         {"Fusce sagittis"}
-                      </p.PlasmicLink>
+                      </PlasmicLink__>
                       <div
                         className={classNames(
                           projectcss.all,
@@ -1344,19 +1347,19 @@ function PlasmicStore__RenderFunc(props) {
                         {"$49.40 "}
                       </h5>
                     </div>
-                  </p.Stack>
-                </p.Stack>
+                  </Stack__>
+                </Stack__>
               </div>
-            </p.Stack>
+            </Stack__>
           </div>
-          <p.Stack
+          <Stack__
             as={"div"}
             data-plasmic-name={"bigPlants"}
             data-plasmic-override={overrides.bigPlants}
             hasGap={true}
             className={classNames(projectcss.all, sty.bigPlants)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__t3Zs0)}
@@ -1371,18 +1374,18 @@ function PlasmicStore__RenderFunc(props) {
               >
                 {"Big plants"}
               </h2>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns___223Rx)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__y9Ecj)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__lzLya)}
                   displayHeight={"270px"}
@@ -1407,7 +1410,7 @@ function PlasmicStore__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__gF0W)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1418,7 +1421,7 @@ function PlasmicStore__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Donec finibus"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1439,13 +1442,13 @@ function PlasmicStore__RenderFunc(props) {
                     {"$100.00"}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__gc2Lg)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__bNz2K)}
                   displayHeight={"270px"}
@@ -1470,7 +1473,7 @@ function PlasmicStore__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__fujRe)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1481,7 +1484,7 @@ function PlasmicStore__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Nulla suscipit"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1502,13 +1505,13 @@ function PlasmicStore__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column___2ZvC)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__z9Osi)}
                   displayHeight={"270px"}
@@ -1533,7 +1536,7 @@ function PlasmicStore__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__avJk9)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1544,7 +1547,7 @@ function PlasmicStore__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Sed consectetur"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1565,7 +1568,7 @@ function PlasmicStore__RenderFunc(props) {
                     {"$18.40 "}
                   </h5>
                 </div>
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__cexwh)}
                   displayHeight={"270px"}
@@ -1590,7 +1593,7 @@ function PlasmicStore__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__qBb6J)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1601,7 +1604,7 @@ function PlasmicStore__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Vestibulum eget"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1622,17 +1625,17 @@ function PlasmicStore__RenderFunc(props) {
                     {"$220.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
-          <p.Stack
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
             as={"div"}
             data-plasmic-name={"cactuses"}
             data-plasmic-override={overrides.cactuses}
             hasGap={true}
             className={classNames(projectcss.all, sty.cactuses)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___39TBb)}
@@ -1647,18 +1650,18 @@ function PlasmicStore__RenderFunc(props) {
               >
                 {"Cactuses"}
               </h2>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__dMczq)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__xuMuz)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__f1Ql1)}
                   displayHeight={"270px"}
@@ -1683,7 +1686,7 @@ function PlasmicStore__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__yudT)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1694,7 +1697,7 @@ function PlasmicStore__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Cras molestie"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1715,13 +1718,13 @@ function PlasmicStore__RenderFunc(props) {
                     {"$24.99"}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column___39Zo8)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__erIc2)}
                   displayHeight={"270px"}
@@ -1746,7 +1749,7 @@ function PlasmicStore__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__oesD)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1757,7 +1760,7 @@ function PlasmicStore__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Curabitur eu tempor"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1778,13 +1781,13 @@ function PlasmicStore__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__fak2J)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__nOtbd)}
                   displayHeight={"270px"}
@@ -1809,7 +1812,7 @@ function PlasmicStore__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__c0P)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1820,7 +1823,7 @@ function PlasmicStore__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Fusce sagittis"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1841,13 +1844,13 @@ function PlasmicStore__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column___3Ec89)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img___8F0X0)}
                   displayHeight={"270px"}
@@ -1872,7 +1875,7 @@ function PlasmicStore__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__syWQq)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1883,7 +1886,7 @@ function PlasmicStore__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Integer porta"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1904,17 +1907,17 @@ function PlasmicStore__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
-          <p.Stack
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
             as={"div"}
             data-plasmic-name={"bestSellers"}
             data-plasmic-override={overrides.bestSellers}
             hasGap={true}
             className={classNames(projectcss.all, sty.bestSellers)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__cWaTv)}
@@ -1934,13 +1937,13 @@ function PlasmicStore__RenderFunc(props) {
               >
                 {"Best sellers"}
               </h2>
-            </p.Stack>
+            </Stack__>
             <ProductRow
               data-plasmic-name={"productRow"}
               data-plasmic-override={overrides.productRow}
               className={classNames("__wab_instance", sty.productRow)}
             />
-          </p.Stack>
+          </Stack__>
           <Footer
             className={classNames("__wab_instance", sty.footer___0KtbA)}
           />

@@ -10,15 +10,18 @@
 // Component: 0iK5TiKaPB5mq
 import * as React from "react";
 import { Link } from "gatsby";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
+  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  hasVariant,
+  useCurrentUser,
+  useDollarState
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import MenuButton from "../../MenuButton"; // plasmic-import: tHKra2qqJQ6tmD/component
 import IconLink from "../../IconLink"; // plasmic-import: oxTB6Z3xMqtire/component
 import LinkButton from "../../LinkButton"; // plasmic-import: tu-boLyMtFKrN1/component
@@ -45,10 +48,10 @@ function PlasmicHeader__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -61,7 +64,7 @@ function PlasmicHeader__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -87,7 +90,7 @@ function PlasmicHeader__RenderFunc(props) {
         { [sty.rootexpanded]: hasVariant($state, "expanded", "expanded") }
       )}
     >
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__lggQt)}
@@ -106,7 +109,7 @@ function PlasmicHeader__RenderFunc(props) {
           }
         />
 
-        <p.PlasmicLink
+        <PlasmicLink__
           className={classNames(projectcss.all, projectcss.a, sty.link__a3JmB)}
           component={Link}
           href={`/`}
@@ -117,8 +120,8 @@ function PlasmicHeader__RenderFunc(props) {
             className={classNames(projectcss.all, sty.svg__ibkrG)}
             role={"img"}
           />
-        </p.PlasmicLink>
-        <p.Stack
+        </PlasmicLink__>
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__o3Lx4, {
@@ -129,7 +132,7 @@ function PlasmicHeader__RenderFunc(props) {
             )
           })}
         >
-          <p.PlasmicLink
+          <PlasmicLink__
             className={classNames(
               projectcss.all,
               projectcss.a,
@@ -141,8 +144,8 @@ function PlasmicHeader__RenderFunc(props) {
             platform={"gatsby"}
           >
             {"Store"}
-          </p.PlasmicLink>
-          <p.PlasmicLink
+          </PlasmicLink__>
+          <PlasmicLink__
             className={classNames(
               projectcss.all,
               projectcss.a,
@@ -154,8 +157,8 @@ function PlasmicHeader__RenderFunc(props) {
             platform={"gatsby"}
           >
             {"About"}
-          </p.PlasmicLink>
-          <p.PlasmicLink
+          </PlasmicLink__>
+          <PlasmicLink__
             className={classNames(
               projectcss.all,
               projectcss.a,
@@ -167,9 +170,9 @@ function PlasmicHeader__RenderFunc(props) {
             platform={"gatsby"}
           >
             {"Faq"}
-          </p.PlasmicLink>
-        </p.Stack>
-        <p.Stack
+          </PlasmicLink__>
+        </Stack__>
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__jn541)}
@@ -199,8 +202,8 @@ function PlasmicHeader__RenderFunc(props) {
               </React.Fragment>
             }
           />
-        </p.Stack>
-      </p.Stack>
+        </Stack__>
+      </Stack__>
       <div
         className={classNames(projectcss.all, sty.freeBox___8GDba, {
           [sty.freeBoxexpanded___8GDba1ELbq]: hasVariant(

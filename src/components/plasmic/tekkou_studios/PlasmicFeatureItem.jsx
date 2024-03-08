@@ -9,13 +9,14 @@
 // Plasmic Project: pxrbsjdrcYiKeJrrydSqC9
 // Component: NbzX9R2oE7Tr_C
 import * as React from "react";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  useCurrentUser
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LinkButton from "../../LinkButton"; // plasmic-import: tu-boLyMtFKrN1/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
@@ -37,10 +38,10 @@ function PlasmicFeatureItem__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   return (
     <div
       data-plasmic-name={"root"}
@@ -60,7 +61,7 @@ function PlasmicFeatureItem__RenderFunc(props) {
       <div className={classNames(projectcss.all, sty.freeBox__tKj3)}>
         <div className={classNames(projectcss.all, sty.freeBox__hOJu)} />
         <div className={classNames(projectcss.all, sty.freeBox__rUMot)}>
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__xhBMo)}
@@ -105,7 +106,7 @@ function PlasmicFeatureItem__RenderFunc(props) {
                 {" $399"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__ime7X)}
@@ -117,8 +118,8 @@ function PlasmicFeatureItem__RenderFunc(props) {
                 text={"View More"}
                 type={"solidOrange"}
               />
-            </p.Stack>
-          </p.Stack>
+            </Stack__>
+          </Stack__>
         </div>
       </div>
     </div>

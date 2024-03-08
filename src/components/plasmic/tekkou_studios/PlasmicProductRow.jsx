@@ -10,14 +10,17 @@
 // Component: sTLuxFVr-H4nw4
 import * as React from "react";
 import { Link } from "gatsby";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  useCurrentUser
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { useScreenVariants as useScreenVariantszNo6Oijq3JlNiY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ZNo6oijq3JlNiY/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
@@ -44,15 +47,15 @@ function PlasmicProductRow__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });
   return (
-    <p.Stack
+    <Stack__
       as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
@@ -69,12 +72,12 @@ function PlasmicProductRow__RenderFunc(props) {
         sty.root
       )}
     >
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.column__bhvhr)}
       >
-        <p.PlasmicImg
+        <PlasmicImg__
           alt={""}
           className={classNames(sty.img__eo49K)}
           displayHeight={"270px"}
@@ -99,7 +102,7 @@ function PlasmicProductRow__RenderFunc(props) {
           />
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__cRsg7)}>
-          <p.PlasmicLink
+          <PlasmicLink__
             className={classNames(
               projectcss.all,
               projectcss.a,
@@ -110,7 +113,7 @@ function PlasmicProductRow__RenderFunc(props) {
             platform={"gatsby"}
           >
             {"Nulla suscipit "}
-          </p.PlasmicLink>
+          </PlasmicLink__>
           <div
             className={classNames(
               projectcss.all,
@@ -131,13 +134,13 @@ function PlasmicProductRow__RenderFunc(props) {
             {"$49.40 "}
           </h5>
         </div>
-      </p.Stack>
-      <p.Stack
+      </Stack__>
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.column__dfCgt)}
       >
-        <p.PlasmicImg
+        <PlasmicImg__
           alt={""}
           className={classNames(sty.img__y6Pc)}
           displayHeight={"270px"}
@@ -162,7 +165,7 @@ function PlasmicProductRow__RenderFunc(props) {
           />
         </div>
         <div className={classNames(projectcss.all, sty.freeBox___4Zfnv)}>
-          <p.PlasmicLink
+          <PlasmicLink__
             className={classNames(
               projectcss.all,
               projectcss.a,
@@ -173,7 +176,7 @@ function PlasmicProductRow__RenderFunc(props) {
             platform={"gatsby"}
           >
             {"Integer porta"}
-          </p.PlasmicLink>
+          </PlasmicLink__>
           <div
             className={classNames(
               projectcss.all,
@@ -194,13 +197,13 @@ function PlasmicProductRow__RenderFunc(props) {
             {"$99.00 "}
           </h5>
         </div>
-      </p.Stack>
-      <p.Stack
+      </Stack__>
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.column__oUqzW)}
       >
-        <p.PlasmicImg
+        <PlasmicImg__
           alt={""}
           className={classNames(sty.img__xmbhW)}
           displayHeight={"270px"}
@@ -225,7 +228,7 @@ function PlasmicProductRow__RenderFunc(props) {
           />
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__x6Arr)}>
-          <p.PlasmicLink
+          <PlasmicLink__
             className={classNames(
               projectcss.all,
               projectcss.a,
@@ -236,7 +239,7 @@ function PlasmicProductRow__RenderFunc(props) {
             platform={"gatsby"}
           >
             {"Vestibulum eget"}
-          </p.PlasmicLink>
+          </PlasmicLink__>
           <div
             className={classNames(
               projectcss.all,
@@ -257,13 +260,13 @@ function PlasmicProductRow__RenderFunc(props) {
             {"$220.00 "}
           </h5>
         </div>
-      </p.Stack>
-      <p.Stack
+      </Stack__>
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.column__nZinn)}
       >
-        <p.PlasmicImg
+        <PlasmicImg__
           alt={""}
           className={classNames(sty.img___04Wi9)}
           displayHeight={"270px"}
@@ -288,7 +291,7 @@ function PlasmicProductRow__RenderFunc(props) {
           />
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__nqL28)}>
-          <p.PlasmicLink
+          <PlasmicLink__
             className={classNames(
               projectcss.all,
               projectcss.a,
@@ -299,7 +302,7 @@ function PlasmicProductRow__RenderFunc(props) {
             platform={"gatsby"}
           >
             {"Fusce sagittis"}
-          </p.PlasmicLink>
+          </PlasmicLink__>
           <div
             className={classNames(
               projectcss.all,
@@ -320,8 +323,8 @@ function PlasmicProductRow__RenderFunc(props) {
             {"$400.40 "}
           </h5>
         </div>
-      </p.Stack>
-    </p.Stack>
+      </Stack__>
+    </Stack__>
   );
 }
 

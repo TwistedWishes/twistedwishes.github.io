@@ -10,14 +10,17 @@
 // Component: t1MJfdGbdT9xN
 import * as React from "react";
 import { Link } from "gatsby";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  useCurrentUser
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import MenuButton from "../../MenuButton"; // plasmic-import: tHKra2qqJQ6tmD/component
 import { useScreenVariants as useScreenVariantszNo6Oijq3JlNiY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ZNo6oijq3JlNiY/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -43,10 +46,10 @@ function PlasmicFooter__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });
@@ -66,17 +69,17 @@ function PlasmicFooter__RenderFunc(props) {
         sty.root
       )}
     >
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__bydvx)}
       >
-        <p.Stack
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__g5MDt)}
         >
-          <p.PlasmicImg
+          <PlasmicImg__
             data-plasmic-name={"img"}
             data-plasmic-override={overrides.img}
             alt={""}
@@ -95,8 +98,8 @@ function PlasmicFooter__RenderFunc(props) {
               aspectRatio: undefined
             }}
           />
-        </p.Stack>
-        <p.Stack
+        </Stack__>
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox___0DR2)}
@@ -126,7 +129,7 @@ function PlasmicFooter__RenderFunc(props) {
             {"from $149.99"}
           </h2>
           <div className={classNames(projectcss.all, sty.freeBox___3BdEe)}>
-            <p.PlasmicLink
+            <PlasmicLink__
               className={classNames(
                 projectcss.all,
                 projectcss.a,
@@ -148,16 +151,16 @@ function PlasmicFooter__RenderFunc(props) {
                 className={classNames(projectcss.all, sty.svg__ic6Qz)}
                 role={"img"}
               />
-            </p.PlasmicLink>
+            </PlasmicLink__>
           </div>
-        </p.Stack>
-      </p.Stack>
-      <p.Stack
+        </Stack__>
+      </Stack__>
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox___1YChd)}
       >
-        <p.Stack
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__iqs5)}
@@ -168,7 +171,7 @@ function PlasmicFooter__RenderFunc(props) {
             className={classNames("__wab_instance", sty.menuButton)}
           />
 
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__rHfa3)}
@@ -178,7 +181,7 @@ function PlasmicFooter__RenderFunc(props) {
               role={"img"}
             />
 
-            <p.PlasmicLink
+            <PlasmicLink__
               className={classNames(
                 projectcss.all,
                 projectcss.a,
@@ -190,8 +193,8 @@ function PlasmicFooter__RenderFunc(props) {
               platform={"gatsby"}
             >
               {"Store"}
-            </p.PlasmicLink>
-            <p.PlasmicLink
+            </PlasmicLink__>
+            <PlasmicLink__
               className={classNames(
                 projectcss.all,
                 projectcss.a,
@@ -203,8 +206,8 @@ function PlasmicFooter__RenderFunc(props) {
               platform={"gatsby"}
             >
               {"About"}
-            </p.PlasmicLink>
-            <p.PlasmicLink
+            </PlasmicLink__>
+            <PlasmicLink__
               className={classNames(
                 projectcss.all,
                 projectcss.a,
@@ -216,8 +219,8 @@ function PlasmicFooter__RenderFunc(props) {
               platform={"gatsby"}
             >
               {"Faq"}
-            </p.PlasmicLink>
-          </p.Stack>
+            </PlasmicLink__>
+          </Stack__>
           <div className={classNames(projectcss.all, sty.freeBox__rcear)}>
             <div
               className={classNames(
@@ -230,7 +233,7 @@ function PlasmicFooter__RenderFunc(props) {
                 "\u00a9 Company. All rights reserved. This site proudly built with "
               }
             </div>
-            <p.PlasmicLink
+            <PlasmicLink__
               className={classNames(
                 projectcss.all,
                 projectcss.a,
@@ -242,10 +245,10 @@ function PlasmicFooter__RenderFunc(props) {
               platform={"gatsby"}
             >
               {"Plasmic"}
-            </p.PlasmicLink>
+            </PlasmicLink__>
           </div>
-        </p.Stack>
-      </p.Stack>
+        </Stack__>
+      </Stack__>
     </div>
   );
 }

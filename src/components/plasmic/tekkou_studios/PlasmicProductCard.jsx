@@ -9,15 +9,19 @@
 // Plasmic Project: pxrbsjdrcYiKeJrrydSqC9
 // Component: m9xraW-kpySFIb
 import * as React from "react";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
+  PlasmicImg as PlasmicImg__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
-  useTrigger,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant,
+  renderPlasmicSlot,
+  useCurrentUser,
+  useDollarState,
+  useTrigger
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Ratings from "../../Ratings"; // plasmic-import: hkLb2r8c9IygmP/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
@@ -51,10 +55,10 @@ function PlasmicProductCard__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -73,7 +77,7 @@ function PlasmicProductCard__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
@@ -84,7 +88,7 @@ function PlasmicProductCard__RenderFunc(props) {
     hover_root: isRootHover
   };
   return (
-    <p.Stack
+    <Stack__
       as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
@@ -111,9 +115,9 @@ function PlasmicProductCard__RenderFunc(props) {
       data-plasmic-trigger-props={[triggerRootHoverProps]}
     >
       <div className={classNames(projectcss.all, sty.freeBox__j1Kk)}>
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: (
-            <p.PlasmicImg
+            <PlasmicImg__
               alt={""}
               className={classNames(sty.img__hfUkQ)}
               displayHeight={"auto"}
@@ -152,7 +156,7 @@ function PlasmicProductCard__RenderFunc(props) {
             {"Sale"}
           </div>
         </div>
-        <p.Stack
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__wFgg)}
@@ -180,9 +184,9 @@ function PlasmicProductCard__RenderFunc(props) {
             className={classNames(projectcss.all, sty.svg__vkWkd)}
             role={"img"}
           />
-        </p.Stack>
+        </Stack__>
       </div>
-      {p.renderPlasmicSlot({
+      {renderPlasmicSlot({
         defaultContents: (
           <Ratings
             className={classNames("__wab_instance", sty.ratings___7IvJa)}
@@ -191,23 +195,23 @@ function PlasmicProductCard__RenderFunc(props) {
 
         value: args.ratings
       })}
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox___1Q32S)}
       >
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: "Title",
           value: args.title,
           className: classNames(sty.slotTargetTitle)
         })}
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: "$100",
           value: args.price,
           className: classNames(sty.slotTargetPrice)
         })}
-      </p.Stack>
-    </p.Stack>
+      </Stack__>
+    </Stack__>
   );
 }
 

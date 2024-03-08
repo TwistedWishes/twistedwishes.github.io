@@ -9,14 +9,18 @@
 // Plasmic Project: pxrbsjdrcYiKeJrrydSqC9
 // Component: d4PABHe6TTTeYg
 import * as React from "react";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
+  PlasmicImg as PlasmicImg__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant,
+  renderPlasmicSlot,
+  useCurrentUser,
+  useDollarState
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
@@ -43,10 +47,10 @@ function PlasmicBlogPost__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -59,14 +63,14 @@ function PlasmicBlogPost__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
     $refs
   });
   return (
-    <p.Stack
+    <Stack__
       as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
@@ -89,9 +93,9 @@ function PlasmicBlogPost__RenderFunc(props) {
           [sty.freeBoxlong___5NFxDxmAt]: hasVariant($state, "long", "long")
         })}
       >
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: (
-            <p.PlasmicImg
+            <PlasmicImg__
               alt={""}
               className={classNames(sty.img__eCl8F)}
               displayHeight={"auto"}
@@ -112,26 +116,26 @@ function PlasmicBlogPost__RenderFunc(props) {
           value: args.image
         })}
       </div>
-      <p.Stack
+      <Stack__
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox___47Ic5, {
           [sty.freeBoxlong___47Ic5DxmAt]: hasVariant($state, "long", "long")
         })}
       >
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: "Why Brands are Looking at Local Language",
           value: args.title,
           className: classNames(sty.slotTargetTitle, {
             [sty.slotTargetTitlelong]: hasVariant($state, "long", "long")
           })
         })}
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents: "By Robert Norby / 18th March 2018",
           value: args.author,
           className: classNames(sty.slotTargetAuthor)
         })}
-        {p.renderPlasmicSlot({
+        {renderPlasmicSlot({
           defaultContents:
             "Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt....",
           value: args.description,
@@ -139,8 +143,8 @@ function PlasmicBlogPost__RenderFunc(props) {
             [sty.slotTargetDescriptionlong]: hasVariant($state, "long", "long")
           })
         })}
-      </p.Stack>
-    </p.Stack>
+      </Stack__>
+    </Stack__>
   );
 }
 

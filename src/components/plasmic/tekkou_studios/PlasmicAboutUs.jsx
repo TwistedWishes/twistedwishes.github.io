@@ -10,15 +10,18 @@
 // Component: I5Q14DJIrh8zkA
 import * as React from "react";
 import { Link } from "gatsby";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  hasVariant,
+  useCurrentUser
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Header2 from "../../Header2"; // plasmic-import: DYJN_6hRhobBcR/component
 import ProductCard from "../../ProductCard"; // plasmic-import: m9xraW-kpySFIb/component
 import Ratings from "../../Ratings"; // plasmic-import: hkLb2r8c9IygmP/component
@@ -76,10 +79,10 @@ function PlasmicAboutUs__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });
@@ -113,14 +116,14 @@ function PlasmicAboutUs__RenderFunc(props) {
             />
 
             <div className={classNames(projectcss.all, sty.freeBox__ll5Oa)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 data-plasmic-name={"foreground2"}
                 data-plasmic-override={overrides.foreground2}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.foreground2)}
               >
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__ufFRn)}
@@ -152,8 +155,8 @@ function PlasmicAboutUs__RenderFunc(props) {
                         : "Well, not really. We\u2019re Snipcart \u2014a bunch of geeks from Qu\u00e9bec City. Planty is a theme we built for Stackbit , a killer JAMstack site-builder. To enable e-commerce on Planty, you\u2019ll need to sign up for Snipcart. Testing is forever free, no credit card required."}
                     </div>
                   </div>
-                </p.Stack>
-              </p.Stack>
+                </Stack__>
+              </Stack__>
             </div>
           </div>
           <div
@@ -161,7 +164,7 @@ function PlasmicAboutUs__RenderFunc(props) {
             data-plasmic-override={overrides.header}
             className={classNames(projectcss.all, sty.header)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___5J3M3)}
@@ -171,7 +174,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   className={classNames("__wab_instance", sty.header2___6Rpni)}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__eWEiq)}>
               <h2
                 className={classNames(
@@ -184,7 +187,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 {"Top Collections"}
               </h2>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__y7WG)}
@@ -196,7 +199,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.productCard__uitr0
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__j6Y3E)}
                       displayHeight={"100%"}
@@ -234,7 +237,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.productCard__i7Ix6
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img___1GSD)}
                       displayHeight={"100%"}
@@ -272,7 +275,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.productCard__yHjSg
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__gFmUr)}
                       displayHeight={"100%"}
@@ -309,7 +312,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.productCard__aLoW
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__alNeM)}
                       displayHeight={"100%"}
@@ -340,7 +343,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   title={"Product"}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <FeatureItem
               data-plasmic-name={"featureItem"}
               data-plasmic-override={overrides.featureItem}
@@ -358,7 +361,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 {"Featured Products"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__yijqC)}
@@ -411,7 +414,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.productCard__vjv5H
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__qez8K)}
                       displayHeight={"auto"}
@@ -449,7 +452,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.productCard__gc0Kr
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__tyz3Y)}
                       displayHeight={"auto"}
@@ -488,7 +491,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     sty.productCard__y4Ph7
                   )}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__y3FeM)}
                       displayHeight={"auto"}
@@ -519,7 +522,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   withReviews={true}
                 />
               </div>
-            </p.Stack>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__sltRd)}>
               <div
                 className={classNames(
@@ -531,7 +534,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 {"Latest Blog"}
               </div>
             </div>
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__eqFlK)}
@@ -540,7 +543,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost__cdKgt)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__e1U4R)}
                       displayHeight={"auto"}
@@ -563,7 +566,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost___6GIcF)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__dicfx)}
                       displayHeight={"auto"}
@@ -586,7 +589,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 <BlogPost
                   className={classNames("__wab_instance", sty.blogPost__xjgQo)}
                   image={
-                    <p.PlasmicImg
+                    <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__qySjC)}
                       displayHeight={"auto"}
@@ -605,13 +608,13 @@ function PlasmicAboutUs__RenderFunc(props) {
                   }
                 />
               </div>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__izeCd)}
             >
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img___4BTp)}
                 displayHeight={"60px"}
@@ -628,7 +631,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__i7Fe5)}
                 displayHeight={"60px"}
@@ -645,7 +648,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img___4Nlgj)}
                 displayHeight={"60px"}
@@ -662,7 +665,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__opSb)}
                 displayHeight={"60px"}
@@ -679,7 +682,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 }}
               />
 
-              <p.PlasmicImg
+              <PlasmicImg__
                 alt={""}
                 className={classNames(sty.img__k27DD)}
                 displayHeight={"60px"}
@@ -695,19 +698,19 @@ function PlasmicAboutUs__RenderFunc(props) {
                   aspectRatio: undefined
                 }}
               />
-            </p.Stack>
+            </Stack__>
             <Footer
               className={classNames("__wab_instance", sty.footer___5VjV)}
             />
           </div>
-          <p.Stack
+          <Stack__
             as={"div"}
             data-plasmic-name={"bigPlants"}
             data-plasmic-override={overrides.bigPlants}
             hasGap={true}
             className={classNames(projectcss.all, sty.bigPlants)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__mz3R8)}
@@ -722,18 +725,18 @@ function PlasmicAboutUs__RenderFunc(props) {
               >
                 {"Big plants"}
               </h2>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__e6Y6F)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column___2Wqni)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img___0Yxet)}
                   displayHeight={"270px"}
@@ -758,7 +761,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__fj682)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -769,7 +772,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Donec finibus"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -790,13 +793,13 @@ function PlasmicAboutUs__RenderFunc(props) {
                     {"$100.00"}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column___368Ac)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__i3P7N)}
                   displayHeight={"270px"}
@@ -821,7 +824,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__udmUv)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -832,7 +835,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Nulla suscipit"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -853,13 +856,13 @@ function PlasmicAboutUs__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__bDwn9)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__xqEtA)}
                   displayHeight={"270px"}
@@ -886,7 +889,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                 <div
                   className={classNames(projectcss.all, sty.freeBox___6YjDs)}
                 >
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -897,7 +900,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Sed consectetur"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -918,7 +921,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     {"$18.40 "}
                   </h5>
                 </div>
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__cIhp5)}
                   displayHeight={"270px"}
@@ -943,7 +946,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__tqWt)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -954,7 +957,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Vestibulum eget"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -975,17 +978,17 @@ function PlasmicAboutUs__RenderFunc(props) {
                     {"$220.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
-          <p.Stack
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
             as={"div"}
             data-plasmic-name={"cactuses"}
             data-plasmic-override={overrides.cactuses}
             hasGap={true}
             className={classNames(projectcss.all, sty.cactuses)}
           >
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__it5Qy)}
@@ -1000,18 +1003,18 @@ function PlasmicAboutUs__RenderFunc(props) {
               >
                 {"Cactuses"}
               </h2>
-            </p.Stack>
-            <p.Stack
+            </Stack__>
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.columns__wrOw6)}
             >
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__mkMGe)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img___8C7Qw)}
                   displayHeight={"270px"}
@@ -1038,7 +1041,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__dGp03)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1049,7 +1052,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Cras molestie"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1070,13 +1073,13 @@ function PlasmicAboutUs__RenderFunc(props) {
                     {"$24.99"}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__pF2Ix)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__yrThu)}
                   displayHeight={"270px"}
@@ -1103,7 +1106,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__cycx7)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1114,7 +1117,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Curabitur eu tempor"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1135,13 +1138,13 @@ function PlasmicAboutUs__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__ceetP)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__r9CgC)}
                   displayHeight={"270px"}
@@ -1166,7 +1169,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__ym2B3)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1177,7 +1180,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Fusce sagittis"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1198,13 +1201,13 @@ function PlasmicAboutUs__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column___4XVeX)}
               >
-                <p.PlasmicImg
+                <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__fdVlB)}
                   displayHeight={"270px"}
@@ -1229,7 +1232,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__ukkGo)}>
-                  <p.PlasmicLink
+                  <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
@@ -1240,7 +1243,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     platform={"gatsby"}
                   >
                     {"Integer porta"}
-                  </p.PlasmicLink>
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1261,22 +1264,22 @@ function PlasmicAboutUs__RenderFunc(props) {
                     {"$49.40 "}
                   </h5>
                 </div>
-              </p.Stack>
-            </p.Stack>
-          </p.Stack>
+              </Stack__>
+            </Stack__>
+          </Stack__>
           <div
             data-plasmic-name={"weLove"}
             data-plasmic-override={overrides.weLove}
             className={classNames(projectcss.all, sty.weLove)}
           >
             <div className={classNames(projectcss.all, sty.freeBox___8Kg3W)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.columns__ha0P)}
               >
                 <div className={classNames(projectcss.all, sty.column__u9Hrb)}>
-                  <p.PlasmicImg
+                  <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img___2ItAq)}
                     displayHeight={
@@ -1298,7 +1301,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     }}
                   />
                 </div>
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__wXvMf)}
@@ -1324,8 +1327,8 @@ function PlasmicAboutUs__RenderFunc(props) {
                       ? "I didn't know the Snipcart guys were into herbs as well! How beautiful is that Planty theme. I'm going to launch a killer JAMstack e-commerce store using this for sure."
                       : "Now THAT is true, but we love web development even more. We talk about it on our blog, like, a lot.  We often craft live demos and open source these bad boys on GitHub. Matter of fact, this Planty theme is open source too! If you spot any bugs, open an issue, and we\u2019ll fire our junior dev. Just kidding Michael, you\u2019re good."}
                   </div>
-                </p.Stack>
-              </p.Stack>
+                </Stack__>
+              </Stack__>
             </div>
           </div>
           <div
@@ -1334,12 +1337,12 @@ function PlasmicAboutUs__RenderFunc(props) {
             className={classNames(projectcss.all, sty.weThink)}
           >
             <div className={classNames(projectcss.all, sty.freeBox___1JHnw)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.columns___9EMHa)}
               >
-                <p.Stack
+                <Stack__
                   as={"div"}
                   hasGap={true}
                   className={classNames(projectcss.all, sty.column__zoEk1)}
@@ -1365,9 +1368,9 @@ function PlasmicAboutUs__RenderFunc(props) {
                       ? "I didn't know the Snipcart guys were into herbs as well! How beautiful is that Planty theme. I'm going to launch a killer JAMstack e-commerce store using this for sure."
                       : "Word. But good code can  solve a lots of problems, too. New and old. That\u2019s why we help beginners get started with web development through free content and tools, like this theme. We also believe the JAMstack might be one solid pillar on which we build that future."}
                   </div>
-                </p.Stack>
+                </Stack__>
                 <div className={classNames(projectcss.all, sty.column__ilZyR)}>
-                  <p.PlasmicImg
+                  <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__vGtKl)}
                     displayHeight={
@@ -1397,7 +1400,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     }}
                   />
                 </div>
-              </p.Stack>
+              </Stack__>
             </div>
           </div>
           <Footer className={classNames("__wab_instance", sty.footer__wDgGd)} />

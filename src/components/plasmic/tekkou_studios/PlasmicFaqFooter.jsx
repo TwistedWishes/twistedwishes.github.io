@@ -10,15 +10,18 @@
 // Component: uRTKM-ijPWR4nr
 import * as React from "react";
 import { Link } from "gatsby";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
+  PlasmicImg as PlasmicImg__,
+  PlasmicLink as PlasmicLink__,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants
+  ensureGlobalVariants,
+  hasVariant,
+  useCurrentUser
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import MenuButton from "../../MenuButton"; // plasmic-import: tHKra2qqJQ6tmD/component
 import { useScreenVariants as useScreenVariantszNo6Oijq3JlNiY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ZNo6oijq3JlNiY/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -44,10 +47,10 @@ function PlasmicFaqFooter__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });
@@ -70,7 +73,7 @@ function PlasmicFaqFooter__RenderFunc(props) {
       <div className={classNames(projectcss.all, sty.freeBox__gIj9T)}>
         <div className={classNames(projectcss.all, sty.columns___02Ve6)}>
           <div className={classNames(projectcss.all, sty.column__wczY)}>
-            <p.PlasmicImg
+            <PlasmicImg__
               data-plasmic-name={"img"}
               data-plasmic-override={overrides.img}
               alt={""}
@@ -90,7 +93,7 @@ function PlasmicFaqFooter__RenderFunc(props) {
               }}
             />
           </div>
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.column__f9Ku6)}
@@ -110,7 +113,7 @@ function PlasmicFaqFooter__RenderFunc(props) {
                 : "Still have questions?\nContact us. "}
             </h1>
             <div className={classNames(projectcss.all, sty.columns__yvtQv)}>
-              <p.Stack
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column___1SbLs)}
@@ -137,8 +140,8 @@ function PlasmicFaqFooter__RenderFunc(props) {
                     ? "Behold our FAQ"
                     : "+1-202-555-0112"}
                 </div>
-              </p.Stack>
-              <p.Stack
+              </Stack__>
+              <Stack__
                 as={"div"}
                 hasGap={true}
                 className={classNames(projectcss.all, sty.column__oshZe)}
@@ -155,8 +158,8 @@ function PlasmicFaqFooter__RenderFunc(props) {
                     : "geeks@snipcart.com"}
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__f4PhN)}>
-                  <p.Stack
-                    as={p.PlasmicLink}
+                  <Stack__
+                    as={PlasmicLink__}
                     hasGap={true}
                     className={classNames(
                       projectcss.all,
@@ -182,21 +185,21 @@ function PlasmicFaqFooter__RenderFunc(props) {
                         ? "Discover"
                         : "On the map"}
                     </div>
-                  </p.Stack>
+                  </Stack__>
                 </div>
-              </p.Stack>
+              </Stack__>
               <div className={classNames(projectcss.all, sty.column__dw5Nf)} />
             </div>
-          </p.Stack>
+          </Stack__>
         </div>
       </div>
       <div className={classNames(projectcss.all, sty.freeBox__rQq3)}>
-        <p.Stack
+        <Stack__
           as={"div"}
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__s8Wpv)}
         >
-          <p.Stack
+          <Stack__
             as={"div"}
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__qqZz3)}
@@ -207,7 +210,7 @@ function PlasmicFaqFooter__RenderFunc(props) {
               className={classNames("__wab_instance", sty.menuButton)}
             />
 
-            <p.Stack
+            <Stack__
               as={"div"}
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__umg3)}
@@ -217,7 +220,7 @@ function PlasmicFaqFooter__RenderFunc(props) {
                 role={"img"}
               />
 
-              <p.PlasmicLink
+              <PlasmicLink__
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
@@ -229,8 +232,8 @@ function PlasmicFaqFooter__RenderFunc(props) {
                 platform={"gatsby"}
               >
                 {"Store"}
-              </p.PlasmicLink>
-              <p.PlasmicLink
+              </PlasmicLink__>
+              <PlasmicLink__
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
@@ -242,8 +245,8 @@ function PlasmicFaqFooter__RenderFunc(props) {
                 platform={"gatsby"}
               >
                 {"About"}
-              </p.PlasmicLink>
-              <p.PlasmicLink
+              </PlasmicLink__>
+              <PlasmicLink__
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
@@ -255,8 +258,8 @@ function PlasmicFaqFooter__RenderFunc(props) {
                 platform={"gatsby"}
               >
                 {"Faq"}
-              </p.PlasmicLink>
-            </p.Stack>
+              </PlasmicLink__>
+            </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox___3VniY)}>
               <div
                 className={classNames(
@@ -269,7 +272,7 @@ function PlasmicFaqFooter__RenderFunc(props) {
                   "\u00a9 Company. All rights reserved. This site proudly built with "
                 }
               </div>
-              <p.PlasmicLink
+              <PlasmicLink__
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
@@ -281,10 +284,10 @@ function PlasmicFaqFooter__RenderFunc(props) {
                 platform={"gatsby"}
               >
                 {"Plasmic"}
-              </p.PlasmicLink>
+              </PlasmicLink__>
             </div>
-          </p.Stack>
-        </p.Stack>
+          </Stack__>
+        </Stack__>
       </div>
     </div>
   );

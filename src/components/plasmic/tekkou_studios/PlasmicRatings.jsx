@@ -9,14 +9,17 @@
 // Plasmic Project: pxrbsjdrcYiKeJrrydSqC9
 // Component: hkLb2r8c9IygmP
 import * as React from "react";
-import * as p from "@plasmicapp/react-web";
-import * as ph from "@plasmicapp/react-web/lib/host";
 import {
-  hasVariant,
+  Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant,
+  renderPlasmicSlot,
+  useCurrentUser,
+  useDollarState
 } from "@plasmicapp/react-web";
+import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
@@ -38,10 +41,10 @@ function PlasmicRatings__RenderFunc(props) {
     ...args,
     ...variants
   };
-  const $ctx = ph.useDataEnv?.() || {};
+  const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = p.useCurrentUser?.() || {};
+  const currentUser = useCurrentUser?.() || {};
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -54,14 +57,14 @@ function PlasmicRatings__RenderFunc(props) {
 
     [$props, $ctx, $refs]
   );
-  const $state = p.useDollarState(stateSpecs, {
+  const $state = useDollarState(stateSpecs, {
     $props,
     $ctx,
     $queries: {},
     $refs
   });
   return (
-    <p.Stack
+    <Stack__
       as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
@@ -86,7 +89,7 @@ function PlasmicRatings__RenderFunc(props) {
         }
       )}
     >
-      <p.Stack
+      <Stack__
         as={"div"}
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
@@ -282,13 +285,13 @@ function PlasmicRatings__RenderFunc(props) {
           })}
           role={"img"}
         />
-      </p.Stack>
-      {p.renderPlasmicSlot({
+      </Stack__>
+      {renderPlasmicSlot({
         defaultContents: "(45 Review)",
         value: args.numReviews,
         className: classNames(sty.slotTargetNumReviews)
       })}
-    </p.Stack>
+    </Stack__>
   );
 }
 
