@@ -157,11 +157,11 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     controls={false}
                     loop={true}
                     muted={true}
-                    playsInline={false}
+                    playsInline={true}
                     poster={vlcsnap2024042307H33M09S298PngIk70Pn6JiKkk}
                     preload={"auto"}
                     src={
-                      "https://drive.google.com/u/1/uc?id=1wixhEq7YbNkxGunjl02LoEDOp21usGWi&export=download"
+                      "https://drive.google.com/file/d/1wixhEq7YbNkxGunjl02LoEDOp21usGWi/preview"
                     }
                   />
 
