@@ -161,7 +161,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     poster={vlcsnap2024042307H33M09S298PngIk70Pn6JiKkk}
                     preload={"auto"}
                     src={
-                      "https://drive.usercontent.google.com/u/1/uc?id=1wixhEq7YbNkxGunjl02LoEDOp21usGWi&export=download"
+                      "https://drive.google.com/u/1/uc?id=1wixhEq7YbNkxGunjl02LoEDOp21usGWi&export=download"
                     }
                   />
 
