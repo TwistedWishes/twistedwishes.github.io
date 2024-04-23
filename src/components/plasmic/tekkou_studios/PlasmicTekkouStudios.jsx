@@ -132,29 +132,29 @@ function PlasmicTekkouStudios__RenderFunc(props) {
             sty.root
           )}
         >
+          <PlasmicImg__
+            alt={""}
+            className={classNames(sty.img__huYe)}
+            displayHeight={"1080px"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"100%"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"1920px"}
+            loading={"lazy"}
+            src={{
+              src: conceptArtPromoKeyArt31NoBackgroundgif9Oji3Zo65Shj,
+              fullWidth: 1920,
+              fullHeight: 1080,
+              aspectRatio: undefined
+            }}
+          />
+
           <div
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
             className={classNames(projectcss.all, sty.header)}
           >
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__qYdYt)}
-              displayHeight={"1080px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"1604px"}
-              loading={"lazy"}
-              src={{
-                src: conceptArtPromoKeyArt31NoBackgroundgif9Oji3Zo65Shj,
-                fullWidth: 1920,
-                fullHeight: 1080,
-                aspectRatio: undefined
-              }}
-            />
-
             <Stack__
               as={"div"}
               hasGap={true}
@@ -820,7 +820,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ fontWeight: 100 }}
                       >
-                        {"-"}
+                        {""}
                       </span>
                     </React.Fragment>
                   </div>
