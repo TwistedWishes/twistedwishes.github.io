@@ -584,17 +584,6 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       </PlasmicLink__>
                     </div>
                   </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__pzaKb
-                    )}
-                  >
-                    {
-                      "Stitched Together is an RPG adventure with a deep story, unique battle mechanics, world-defying stakes, and a whole extra dimension!"
-                    }
-                  </div>
                 </Stack__>
                 <Stack__
                   as={"div"}
