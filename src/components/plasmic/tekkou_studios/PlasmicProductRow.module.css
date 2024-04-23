@@ -6,6 +6,7 @@
   flex-shrink: 1;
   position: relative;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
   padding: 8px 8px 0px;
 }
 .root > :global(.__wab_flex-container) {
@@ -26,9 +27,6 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 15px;
   margin-top: 15px;
-}
-.root {
-  --plsmc-rc-col-gap: 0px;
 }
 .root > :global(.__wab_flex-container) > :nth-child(4n + 1) {
   width: calc((100% - 4 * var(--plsmc-rc-col-gap, 0px)) * 3 / 12);

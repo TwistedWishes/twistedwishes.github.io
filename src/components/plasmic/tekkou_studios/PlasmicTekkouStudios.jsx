@@ -33,8 +33,13 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
 import * as sty from "./PlasmicTekkouStudios.module.css"; // plasmic-import: U2xBTGhaBJVBc/css
-import vlcsnap2023110717H04M07S779PngJgWZxojzGDue from "./images/vlcsnap2023110717H04M07S779Png.png"; // plasmic-import: JgWZxojzGDue/picture
-import vlcsnap2023110718H09M08S497PngSWuzSRjSeAjQ from "./images/vlcsnap2023110718H09M08S497Png.png"; // plasmic-import: SWuzSRjSEAjQ/picture
+import vlcsnap2024042307H33M09S298PngIk70Pn6JiKkk from "./images/vlcsnap2024042307H33M09S298Png.png"; // plasmic-import: IK70pn6JiKkk/picture
+import vlcsnap2024042213H52M56S453PngI7KbuOaIbnH7 from "./images/vlcsnap2024042213H52M56S453Png.png"; // plasmic-import: I7KBUOaIbnH7/picture
+import vlcsnap2024042216H44M57S493PngJK1HRiOnNy5 from "./images/vlcsnap2024042216H44M57S493Png.png"; // plasmic-import: jK1h_RiONNy5/picture
+import vlcsnap2024042307H48M27S035PngNMj4MzyNahvE from "./images/vlcsnap2024042307H48M27S035Png.png"; // plasmic-import: NMj4MZYNahvE/picture
+import vlcsnap2024042307H49M54S791PngSX4OVnUrcJ5L from "./images/vlcsnap2024042307H49M54S791Png.png"; // plasmic-import: sX4oVNUrcJ5L/picture
+import vlcsnap2024042307H52M24S723PngQExbDgiBUhhw from "./images/vlcsnap2024042307H52M24S723Png.png"; // plasmic-import: qExbDgiBUhhw/picture
+import vlcsnap2024042307H42M21S495Png5U7IUSxqFyll from "./images/vlcsnap2024042307H42M21S495Png.png"; // plasmic-import: 5u7iUSxqFyll/picture
 import tekkouLogoSeptember20234Png2MWgS6QoX0KP from "./images/tekkouLogoSeptember20234Png.png"; // plasmic-import: 2mWgS6qoX0kP/picture
 import sugarcreekLogoFullpngDBkCf3AHj from "./images/sugarcreekLogoFullpng.png"; // plasmic-import: DBkCf3AHj/picture
 import vlcsnap2023052317H36M59S219PngMElD3RVyO from "./images/vlcsnap2023052317H36M59S219Png.png"; // plasmic-import: MElD3RVyO/picture
@@ -145,39 +150,54 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   className={classNames(projectcss.all, sty.freeBox__lhl8C)}
                 >
                   <Video
+                    data-plasmic-name={"htmlVideo"}
+                    data-plasmic-override={overrides.htmlVideo}
                     autoPlay={true}
-                    className={classNames(
-                      "__wab_instance",
-                      sty.htmlVideo___3UeR9
-                    )}
+                    className={classNames("__wab_instance", sty.htmlVideo)}
                     controls={false}
                     loop={true}
                     muted={true}
                     playsInline={false}
-                    poster={vlcsnap2023110717H04M07S779PngJgWZxojzGDue}
+                    poster={vlcsnap2024042307H33M09S298PngIk70Pn6JiKkk}
                     preload={"auto"}
                     src={
-                      "https://drive.google.com/u/1/uc?id=1-KMz_ZZcMZwkg-fLQ-mkgPpzHFBaZLjB&export=download"
+                      "https://drive.google.com/file/d/1wixhEq7YbNkxGunjl02LoEDOp21usGWi&export=download"
                     }
                   />
 
-                  <Video
-                    autoPlay={true}
-                    className={classNames(
-                      "__wab_instance",
-                      sty.htmlVideo__vIlxb
-                    )}
-                    controls={false}
-                    loop={true}
-                    muted={true}
-                    playsInline={false}
-                    poster={vlcsnap2023110718H09M08S497PngSWuzSRjSeAjQ}
-                    preload={"auto"}
-                    src={
-                      "https://drive.google.com/u/1/uc?id=1wPWgZ7WEc7nEHMu8ekoI0HqNLSKEKx3I&export=download"
-                    }
-                  />
-
+                  <div
+                    className={classNames(projectcss.all, sty.columns___5Hw1U)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__oGje)}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          sty.link___4UdQx
+                        )}
+                        component={Link}
+                        href={
+                          "https://store.steampowered.com/app/2732800/Stitched_Together/"
+                        }
+                        platform={"gatsby"}
+                        target={"_blank"}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#F6E702" }}
+                          >
+                            {"Play the Free Demo on Steam!"}
+                          </span>
+                        </React.Fragment>
+                      </PlasmicLink__>
+                    </div>
+                  </div>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -186,8 +206,147 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     )}
                   >
                     {
-                      "A new adventure from Tekkou Studios\nMore info coming soon..."
+                      "Stitched Together is an RPG adventure with a deep story, unique battle mechanics, world-defying stakes, and a whole extra dimension!"
                     }
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__kRot0)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__rDfrz)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"45%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: vlcsnap2024042213H52M56S453PngI7KbuOaIbnH7,
+                        fullWidth: 1920,
+                        fullHeight: 1080,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__s06Qt)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"45%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: vlcsnap2024042216H44M57S493PngJK1HRiOnNy5,
+                        fullWidth: 1920,
+                        fullHeight: 1080,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__zI2Js
+                    )}
+                  >
+                    {
+                      "Take the role of Gwen Colgrave - an adventurous college student with a point to prove once she returns home. She'll stumble upon a bigger world with bigger consequences than she ever signed up for, but alongside her long-time friends, Gwen will have no choice but to save her world from being torn apart at the seams, no matter what, or who, stands in her way."
+                    }
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__w6MWx)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__bByUd)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"45%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: vlcsnap2024042307H48M27S035PngNMj4MzyNahvE,
+                        fullWidth: 1920,
+                        fullHeight: 1080,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__kgbPf)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"45%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: vlcsnap2024042307H49M54S791PngSX4OVnUrcJ5L,
+                        fullWidth: 1920,
+                        fullHeight: 1080,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___1U9Nd
+                    )}
+                  >
+                    {
+                      "In Stitched Together, you'll progress through turn-based battles, all while leveling up, gaining experience, and growing your bonds to unlock new abilities! Explore Gwen's hometown of Flipside and many other places to meet plenty of wild and lovable characters, manipulate and transform the world around you, discover hidden secrets and collectibles, and learn more about the mysterious parallel world known as the Fabric!"
+                    }
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__vlGvh)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__krgVz)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"45%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: vlcsnap2024042307H52M24S723PngQExbDgiBUhhw,
+                        fullWidth: 1920,
+                        fullHeight: 1080,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__nfGb3)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"45%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: vlcsnap2024042307H42M21S495Png5U7IUSxqFyll,
+                        fullWidth: 1920,
+                        fullHeight: 1080,
+                        aspectRatio: undefined
+                      }}
+                    />
                   </div>
                   <PlasmicImg__
                     alt={""}
@@ -423,6 +582,17 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                         </React.Fragment>
                       </PlasmicLink__>
                     </div>
+                  </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pzaKb
+                    )}
+                  >
+                    {
+                      "Stitched Together is an RPG adventure with a deep story, unique battle mechanics, world-defying stakes, and a whole extra dimension!"
+                    }
                   </div>
                 </Stack__>
                 <Stack__
@@ -1193,8 +1363,18 @@ function PlasmicTekkouStudios__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "embedHtml", "h2", "featureItem", "footer"],
-  header: ["header", "embedHtml", "h2", "featureItem", "footer"],
+  root: [
+    "root",
+    "header",
+    "htmlVideo",
+    "embedHtml",
+    "h2",
+    "featureItem",
+    "footer"
+  ],
+
+  header: ["header", "htmlVideo", "embedHtml", "h2", "featureItem", "footer"],
+  htmlVideo: ["htmlVideo"],
   embedHtml: ["embedHtml"],
   h2: ["h2"],
   featureItem: ["featureItem"],
@@ -1234,6 +1414,7 @@ export const PlasmicTekkouStudios = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
+    htmlVideo: makeNodeComponent("htmlVideo"),
     embedHtml: makeNodeComponent("embedHtml"),
     h2: makeNodeComponent("h2"),
     featureItem: makeNodeComponent("featureItem"),

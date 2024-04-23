@@ -22,9 +22,6 @@
   padding: 0px;
 }
 .columns___02Ve6 {
-  --plsmc-rc-col-gap: 0px;
-}
-.columns___02Ve6 {
   display: flex;
   position: relative;
   width: 100%;
@@ -34,6 +31,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
   padding: 0px;
 }
 .columns___02Ve6 > :nth-child(2n + 1) {
@@ -132,9 +130,6 @@
   }
 }
 .columns__yvtQv {
-  --plsmc-rc-col-gap: 0px;
-}
-.columns__yvtQv {
   display: flex;
   position: relative;
   width: 100%;
@@ -144,6 +139,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   min-width: 0;
+  --plsmc-rc-col-gap: 0px;
   padding: 8px;
 }
 .columns__yvtQv > :nth-child(3n + 1) {
