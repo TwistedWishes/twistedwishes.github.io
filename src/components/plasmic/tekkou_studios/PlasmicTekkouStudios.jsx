@@ -814,13 +814,6 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       >
                         {"Alaina Jeffers - QA Tester & Concept Artist"}
                       </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 100 }}
-                      >
-                        {"-"}
-                      </span>
                     </React.Fragment>
                   </div>
                 </Stack__>
