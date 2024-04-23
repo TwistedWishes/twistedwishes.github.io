@@ -21,7 +21,6 @@ import {
   useCurrentUser
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import ProductCard from "../../ProductCard"; // plasmic-import: m9xraW-kpySFIb/component
 import Ratings from "../../Ratings"; // plasmic-import: hkLb2r8c9IygmP/component
@@ -33,7 +32,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
 import * as sty from "./PlasmicTekkouStudios.module.css"; // plasmic-import: U2xBTGhaBJVBc/css
-import vlcsnap2024042307H33M09S298PngIk70Pn6JiKkk from "./images/vlcsnap2024042307H33M09S298Png.png"; // plasmic-import: IK70pn6JiKkk/picture
+import conceptArtPromoKeyArt31NoBackgroundgif9Oji3Zo65Shj from "./images/conceptArtPromoKeyArt31NoBackgroundgif.gif"; // plasmic-import: 9Oji3Zo65shj/picture
 import vlcsnap2024042213H52M56S453PngI7KbuOaIbnH7 from "./images/vlcsnap2024042213H52M56S453Png.png"; // plasmic-import: I7KBUOaIbnH7/picture
 import vlcsnap2024042216H44M57S493PngJK1HRiOnNy5 from "./images/vlcsnap2024042216H44M57S493Png.png"; // plasmic-import: jK1h_RiONNy5/picture
 import vlcsnap2024042307H48M27S035PngNMj4MzyNahvE from "./images/vlcsnap2024042307H48M27S035Png.png"; // plasmic-import: NMj4MZYNahvE/picture
@@ -138,6 +137,24 @@ function PlasmicTekkouStudios__RenderFunc(props) {
             data-plasmic-override={overrides.header}
             className={classNames(projectcss.all, sty.header)}
           >
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__qYdYt)}
+              displayHeight={"1080px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"1604px"}
+              loading={"lazy"}
+              src={{
+                src: conceptArtPromoKeyArt31NoBackgroundgif9Oji3Zo65Shj,
+                fullWidth: 1920,
+                fullHeight: 1080,
+                aspectRatio: undefined
+              }}
+            />
+
             <Stack__
               as={"div"}
               hasGap={true}
@@ -149,22 +166,6 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox__lhl8C)}
                 >
-                  <Video
-                    data-plasmic-name={"htmlVideo"}
-                    data-plasmic-override={overrides.htmlVideo}
-                    autoPlay={true}
-                    className={classNames("__wab_instance", sty.htmlVideo)}
-                    controls={false}
-                    loop={true}
-                    muted={true}
-                    playsInline={true}
-                    poster={vlcsnap2024042307H33M09S298PngIk70Pn6JiKkk}
-                    preload={"auto"}
-                    src={
-                      "https://drive.google.com/file/d/1wixhEq7YbNkxGunjl02LoEDOp21usGWi/export?format=download"
-                    }
-                  />
-
                   <div
                     className={classNames(projectcss.all, sty.columns___5Hw1U)}
                   >
@@ -814,6 +815,13 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       >
                         {"Alaina Jeffers - QA Tester & Concept Artist"}
                       </span>
+                      <React.Fragment>{"\n"}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 100 }}
+                      >
+                        {"-"}
+                      </span>
                     </React.Fragment>
                   </div>
                 </Stack__>
@@ -1356,18 +1364,8 @@ function PlasmicTekkouStudios__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "header",
-    "htmlVideo",
-    "embedHtml",
-    "h2",
-    "featureItem",
-    "footer"
-  ],
-
-  header: ["header", "htmlVideo", "embedHtml", "h2", "featureItem", "footer"],
-  htmlVideo: ["htmlVideo"],
+  root: ["root", "header", "embedHtml", "h2", "featureItem", "footer"],
+  header: ["header", "embedHtml", "h2", "featureItem", "footer"],
   embedHtml: ["embedHtml"],
   h2: ["h2"],
   featureItem: ["featureItem"],
@@ -1407,7 +1405,6 @@ export const PlasmicTekkouStudios = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    htmlVideo: makeNodeComponent("htmlVideo"),
     embedHtml: makeNodeComponent("embedHtml"),
     h2: makeNodeComponent("h2"),
     featureItem: makeNodeComponent("featureItem"),

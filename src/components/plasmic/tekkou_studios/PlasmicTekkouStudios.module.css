@@ -22,6 +22,18 @@
   align-items: center;
   min-width: 0;
 }
+.img__qYdYt {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  width: 1604px;
+  height: 1080px;
+  margin-top: 0px;
+  flex-shrink: 0;
+}
+.img__qYdYt > picture > img {
+  object-fit: cover;
+}
 .freeBox__t7Xv4 {
   display: flex;
   position: relative;
@@ -101,14 +113,6 @@
     padding-bottom: 80px;
     padding-top: 30px;
   }
-}
-.htmlVideo:global(.__wab_instance) {
-  width: 1920px;
-  height: auto;
-  max-width: none;
-  object-fit: cover;
-  position: relative;
-  margin-right: 0px;
 }
 .columns___5Hw1U {
   display: flex;
