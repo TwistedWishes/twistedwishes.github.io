@@ -32,7 +32,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
 import * as sty from "./PlasmicTekkouStudios.module.css"; // plasmic-import: U2xBTGhaBJVBc/css
-import conceptArtPromoKeyArt31NoBackgroundgif9Oji3Zo65Shj from "./images/conceptArtPromoKeyArt31NoBackgroundgif.gif"; // plasmic-import: 9Oji3Zo65shj/picture
+import conceptArtPromoKeyArt311PngIxKwfKbWqEkP from "./images/conceptArtPromoKeyArt311Png.png"; // plasmic-import: ixKwfKbWQEkP/picture
 import vlcsnap2024042213H52M56S453PngI7KbuOaIbnH7 from "./images/vlcsnap2024042213H52M56S453Png.png"; // plasmic-import: I7KBUOaIbnH7/picture
 import vlcsnap2024042216H44M57S493PngJK1HRiOnNy5 from "./images/vlcsnap2024042216H44M57S493Png.png"; // plasmic-import: jK1h_RiONNy5/picture
 import vlcsnap2024042307H48M27S035PngNMj4MzyNahvE from "./images/vlcsnap2024042307H48M27S035Png.png"; // plasmic-import: NMj4MZYNahvE/picture
@@ -143,9 +143,9 @@ function PlasmicTekkouStudios__RenderFunc(props) {
             displayWidth={"1920px"}
             loading={"lazy"}
             src={{
-              src: conceptArtPromoKeyArt31NoBackgroundgif9Oji3Zo65Shj,
-              fullWidth: 1920,
-              fullHeight: 1080,
+              src: conceptArtPromoKeyArt311PngIxKwfKbWqEkP,
+              fullWidth: 7414,
+              fullHeight: 4170,
               aspectRatio: undefined
             }}
           />
