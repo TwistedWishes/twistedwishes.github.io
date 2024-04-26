@@ -349,6 +349,68 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       }}
                     />
                   </div>
+                  <div
+                    className={classNames(projectcss.all, sty.columns__toG5E)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__rHyBx)}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          sty.link__cKgQp
+                        )}
+                        component={Link}
+                        href={
+                          "https://store.steampowered.com/app/2014300/Sugarcreek/"
+                        }
+                        platform={"gatsby"}
+                        target={"_blank"}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#7C7C7C" }}
+                          >
+                            {"Steam Page"}
+                          </span>
+                        </React.Fragment>
+                      </PlasmicLink__>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.column__aNzMh)}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          sty.link__d6GvA
+                        )}
+                        component={Link}
+                        href={
+                          "https://drive.google.com/drive/folders/1cPm3InTYS4xD6OC6wbBUR3uLzvhtAUXZ?usp=sharing"
+                        }
+                        platform={"gatsby"}
+                        target={"_blank"}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#F4D914" }}
+                          >
+                            {"Press Kit"}
+                          </span>
+                        </React.Fragment>
+                      </PlasmicLink__>
+                    </div>
+                  </div>
                   <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__cuAH)}
