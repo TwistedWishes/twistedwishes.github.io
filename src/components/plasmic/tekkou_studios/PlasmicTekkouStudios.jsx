@@ -362,7 +362,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                         )}
                         component={Link}
                         href={
-                          "https://store.steampowered.com/app/2014300/Sugarcreek/"
+                          "https://store.steampowered.com/app/2732800/Stitched_Together/"
                         }
                         platform={"gatsby"}
                         target={"_blank"}
