@@ -18,8 +18,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants,
-  hasVariant,
-  useCurrentUser
+  hasVariant
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Header3 from "../../Header3"; // plasmic-import: e6bVodJbS1czUe/component
@@ -85,7 +84,6 @@ function PlasmicSinglePage__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });

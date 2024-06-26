@@ -13,8 +13,7 @@ import {
   Stack as Stack__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  useCurrentUser
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import LinkButton from "../../LinkButton"; // plasmic-import: tu-boLyMtFKrN1/component
@@ -41,7 +40,6 @@ function PlasmicFeatureItem__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   return (
     <div
       data-plasmic-name={"root"}

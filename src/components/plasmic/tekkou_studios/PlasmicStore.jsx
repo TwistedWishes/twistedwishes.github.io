@@ -17,8 +17,7 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants,
-  useCurrentUser
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Header2 from "../../Header2"; // plasmic-import: DYJN_6hRhobBcR/component
@@ -81,7 +80,6 @@ function PlasmicStore__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });

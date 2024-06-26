@@ -17,8 +17,7 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants,
-  useCurrentUser
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { useScreenVariants as useScreenVariantszNo6Oijq3JlNiY } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ZNo6oijq3JlNiY/globalVariant
@@ -50,7 +49,6 @@ function PlasmicProductRow__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });

@@ -17,8 +17,7 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants,
-  useCurrentUser
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
@@ -104,7 +103,6 @@ function PlasmicTekkouStudios__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantszNo6Oijq3JlNiY()
   });
@@ -377,35 +375,6 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                             style={{ color: "#7C7C7C" }}
                           >
                             {"Steam Page"}
-                          </span>
-                        </React.Fragment>
-                      </PlasmicLink__>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.column__aNzMh)}
-                    >
-                      <PlasmicLink__
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          sty.link__d6GvA
-                        )}
-                        component={Link}
-                        href={
-                          "https://drive.google.com/drive/folders/1cPm3InTYS4xD6OC6wbBUR3uLzvhtAUXZ?usp=sharing"
-                        }
-                        platform={"gatsby"}
-                        target={"_blank"}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#F4D914" }}
-                          >
-                            {"Press Kit"}
                           </span>
                         </React.Fragment>
                       </PlasmicLink__>
