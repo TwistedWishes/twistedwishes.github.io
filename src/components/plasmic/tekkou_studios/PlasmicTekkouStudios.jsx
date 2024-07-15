@@ -166,37 +166,8 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                 >
                   <div
                     className={classNames(projectcss.all, sty.columns___5Hw1U)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.column__oGje)}
-                    >
-                      <PlasmicLink__
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          projectcss.__wab_text,
-                          sty.link___4UdQx
-                        )}
-                        component={Link}
-                        href={
-                          "https://store.steampowered.com/app/2732800/Stitched_Together/"
-                        }
-                        platform={"gatsby"}
-                        target={"_blank"}
-                      >
-                        <React.Fragment>
-                          <span
-                            className={
-                              "plasmic_default__all plasmic_default__span"
-                            }
-                            style={{ color: "#F6E702" }}
-                          >
-                            {"Play the Free Demo on Steam!"}
-                          </span>
-                        </React.Fragment>
-                      </PlasmicLink__>
-                    </div>
-                  </div>
+                  />
+
                   <div
                     className={classNames(
                       projectcss.all,
