@@ -27,8 +27,8 @@ import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_colo
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
 import * as sty from "./PlasmicFooter.module.css"; // plasmic-import: t1MJfdGbdT9xN/css
 import ButtonArrowIcon from "./icons/PlasmicIcon__ButtonArrow"; // plasmic-import: 3rEVIBikc50PR2/icon
-import LogoWhitesvgIcon from "./icons/PlasmicIcon__LogoWhitesvg"; // plasmic-import: U4HHM8rDMXQhVG/icon
-import promowebpVSvYgMiuzEbT from "./images/promowebp.webp"; // plasmic-import: V_SvYGMiuzEbT-/picture
+import LogoWhiteSvgIcon from "./icons/PlasmicIcon__LogoWhiteSvg"; // plasmic-import: U4HHM8rDMXQhVG/icon
+import promoWebpVSvYgMiuzEbT from "./images/promoWebp.webp"; // plasmic-import: V_SvYGMiuzEbT-/picture
 
 createPlasmicElementProxy;
 
@@ -40,7 +40,16 @@ const $$ = {};
 
 function PlasmicFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -90,7 +99,7 @@ function PlasmicFooter__RenderFunc(props) {
             displayWidth={"auto"}
             loading={"lazy"}
             src={{
-              src: promowebpVSvYgMiuzEbT,
+              src: promoWebpVSvYgMiuzEbT,
               fullWidth: 720,
               fullHeight: 525,
               aspectRatio: undefined
@@ -174,7 +183,7 @@ function PlasmicFooter__RenderFunc(props) {
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__rHfa3)}
           >
-            <LogoWhitesvgIcon
+            <LogoWhiteSvgIcon
               className={classNames(projectcss.all, sty.svg__fQy58)}
               role={"img"}
             />

@@ -5,7 +5,7 @@
 import React from "react";
 import { classNames } from "@plasmicapp/react-web";
 
-export function LeftArrowSvgrepoComsvgIcon(props) {
+export function LeftArrowSvgrepoComSvgIcon(props) {
   const { className, style, title, ...restProps } = props;
   return (
     <svg
@@ -35,5 +35,5 @@ export function LeftArrowSvgrepoComsvgIcon(props) {
   );
 }
 
-export default LeftArrowSvgrepoComsvgIcon;
+export default LeftArrowSvgrepoComSvgIcon;
 /* prettier-ignore-end */

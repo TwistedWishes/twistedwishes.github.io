@@ -77,8 +77,7 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -458,13 +457,13 @@
         },
         {
           "id": "pQ3vunFoZEff5k",
-          "name": "ChecksvgIcon",
-          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Checksvg.jsx"
+          "name": "CheckSvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__CheckSvg.jsx"
         },
         {
           "id": "U4HHM8rDMXQhVG",
-          "name": "LogoWhitesvgIcon",
-          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LogoWhitesvg.jsx"
+          "name": "LogoWhiteSvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LogoWhiteSvg.jsx"
         },
         {
           "id": "3rEVIBikc50PR2",
@@ -488,8 +487,8 @@
         },
         {
           "id": "bAtAb5ADu5cG8P",
-          "name": "QuotessvgIcon",
-          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__Quotessvg.jsx"
+          "name": "QuotesSvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__QuotesSvg.jsx"
         },
         {
           "id": "kBxn1sGYSYlCDu",
@@ -503,8 +502,8 @@
         },
         {
           "id": "P-DXlP8R2hYuyc",
-          "name": "DotSvgrepoComsvgIcon",
-          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__DotSvgrepoComsvg.jsx"
+          "name": "DotSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__DotSvgrepoComSvg.jsx"
         },
         {
           "id": "P3ttIOyDegLRvV",
@@ -513,8 +512,8 @@
         },
         {
           "id": "z2oKaxycfF69DK",
-          "name": "LocationSvgrepoComsvgIcon",
-          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LocationSvgrepoComsvg.jsx"
+          "name": "LocationSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LocationSvgrepoComSvg.jsx"
         },
         {
           "id": "sTg6IS6-2Zvsfi",
@@ -523,8 +522,8 @@
         },
         {
           "id": "AXOi-FrNa-5tp7",
-          "name": "LeftArrowSvgrepoComsvgIcon",
-          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LeftArrowSvgrepoComsvg.jsx"
+          "name": "LeftArrowSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/tekkou_studios/icons/PlasmicIcon__LeftArrowSvgrepoComSvg.jsx"
         }
       ],
       "images": [
@@ -656,42 +655,42 @@
         {
           "id": "e_jnXhoslVm46Y",
           "name": "pawel-czerwinski-qzaIDFtzcZ0-unsplash.jpg",
-          "filePath": "plasmic/tekkou_studios/images/pawelCzerwinskiQzaIdFtzcZ0Unsplashjpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/pawelCzerwinskiQzaIdFtzcZ0UnsplashJpg.jpg"
         },
         {
           "id": "UZ1-tOLqvavHIn",
           "name": "sabrina-mazzeo-5jvYp-BjzQA-unsplash.jpg",
-          "filePath": "plasmic/tekkou_studios/images/sabrinaMazzeo5JvYpBjzQaUnsplashjpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/sabrinaMazzeo5JvYpBjzQaUnsplashJpg.jpg"
         },
         {
           "id": "qjqekLbgXUbbzS",
           "name": "annie-spratt-VDXtVYJVj7A-unsplash.jpg",
-          "filePath": "plasmic/tekkou_studios/images/annieSprattVdXtVyjVj7AUnsplashjpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/annieSprattVdXtVyjVj7AUnsplashJpg.jpg"
         },
         {
           "id": "RiBhe2I8SONeKh",
           "name": "yavor-punchev-iSHwa3EaMlo-unsplash.jpg",
-          "filePath": "plasmic/tekkou_studios/images/yavorPunchevISHwa3EaMloUnsplashjpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/yavorPunchevISHwa3EaMloUnsplashJpg.jpg"
         },
         {
           "id": "u3z8jgzcZrmHl-",
           "name": "galina-n-miziNqvJx5M-unsplash.jpg",
-          "filePath": "plasmic/tekkou_studios/images/galinaNMiziNqvJx5MUnsplashjpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/galinaNMiziNqvJx5MUnsplashJpg.jpg"
         },
         {
           "id": "YEIKuc4Us-uOc5",
           "name": "igor-son-FV_PxCqgtwc-unsplash.jpg",
-          "filePath": "plasmic/tekkou_studios/images/igorSonFvPxCqgtwcUnsplashjpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/igorSonFvPxCqgtwcUnsplashJpg.jpg"
         },
         {
           "id": "F1Dc1rqcLUfMdJ",
           "name": "scott-webb-oRWRlTgBrPo-unsplash.jpg",
-          "filePath": "plasmic/tekkou_studios/images/scottWebbORwRlTgBrPoUnsplashjpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/scottWebbORwRlTgBrPoUnsplashJpg.jpg"
         },
         {
           "id": "QR2sCt8irZr_xZ",
           "name": "freddie-marriage-UcfKYTan-LU-unsplash.jpg",
-          "filePath": "plasmic/tekkou_studios/images/freddieMarriageUcfKyTanLuUnsplashjpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/freddieMarriageUcfKyTanLuUnsplashJpg.jpg"
         },
         {
           "id": "Sf8i_Yobzn6rJp",
@@ -701,22 +700,22 @@
         {
           "id": "xJ6Q3vV_MRM0GT",
           "name": "plant1-featured.jpg",
-          "filePath": "plasmic/tekkou_studios/images/plant1Featuredjpg.png"
+          "filePath": "plasmic/tekkou_studios/images/plant1FeaturedJpg.png"
         },
         {
           "id": "t2yarasV6KLkUc",
           "name": "plant2-featured.jpg",
-          "filePath": "plasmic/tekkou_studios/images/plant2Featuredjpg.png"
+          "filePath": "plasmic/tekkou_studios/images/plant2FeaturedJpg.png"
         },
         {
           "id": "tiViCTWpbB5dd_",
           "name": "plant5-featured.jpg",
-          "filePath": "plasmic/tekkou_studios/images/plant5Featuredjpg.png"
+          "filePath": "plasmic/tekkou_studios/images/plant5FeaturedJpg.png"
         },
         {
           "id": "IEz5kdu77KUzPS",
           "name": "plant9-featured.jpg",
-          "filePath": "plasmic/tekkou_studios/images/plant9Featuredjpg.png"
+          "filePath": "plasmic/tekkou_studios/images/plant9FeaturedJpg.png"
         },
         {
           "id": "Wyp-oSqMWKLljC",
@@ -761,27 +760,27 @@
         {
           "id": "V_SvYGMiuzEbT-",
           "name": "promo.webp",
-          "filePath": "plasmic/tekkou_studios/images/promowebp.webp"
+          "filePath": "plasmic/tekkou_studios/images/promoWebp.webp"
         },
         {
           "id": "-65mljIkpZoDa8",
           "name": "leaf.svg",
-          "filePath": "plasmic/tekkou_studios/images/leafsvg.svg"
+          "filePath": "plasmic/tekkou_studios/images/leafSvg.svg"
         },
         {
           "id": "SO_QSTxcS_KSrf",
           "name": "leaf-light-grey.svg",
-          "filePath": "plasmic/tekkou_studios/images/leafLightGreysvg.svg"
+          "filePath": "plasmic/tekkou_studios/images/leafLightGreySvg.svg"
         },
         {
           "id": "5P_FeRGfvIYQJO",
           "name": "nan_talk.webp",
-          "filePath": "plasmic/tekkou_studios/images/nanTalkwebp.webp"
+          "filePath": "plasmic/tekkou_studios/images/nanTalkWebp.webp"
         },
         {
           "id": "jkVhXJc87CmYn_",
           "name": "team.webp",
-          "filePath": "plasmic/tekkou_studios/images/teamwebp.webp"
+          "filePath": "plasmic/tekkou_studios/images/teamWebp.webp"
         },
         {
           "id": "VqP2SYwnbYkHVb",
@@ -791,7 +790,7 @@
         {
           "id": "fufi_Y9RNCpPCy",
           "name": "plant6-lg.webp",
-          "filePath": "plasmic/tekkou_studios/images/plant6Lgwebp.webp"
+          "filePath": "plasmic/tekkou_studios/images/plant6LgWebp.webp"
         },
         {
           "id": "INQISgpWPc1_7O",
@@ -801,17 +800,17 @@
         {
           "id": "GLG-jscswgN6CB",
           "name": "header-banner.jpg",
-          "filePath": "plasmic/tekkou_studios/images/headerBannerjpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/headerBannerJpg.jpg"
         },
         {
           "id": "NmbdSsN7C4xrgZ",
           "name": "header-banner-mobile.jpg",
-          "filePath": "plasmic/tekkou_studios/images/headerBannerMobilejpg.jpg"
+          "filePath": "plasmic/tekkou_studios/images/headerBannerMobileJpg.jpg"
         },
         {
           "id": "DBkCf3AHj",
           "name": "Sugarcreek Logo Full.png",
-          "filePath": "plasmic/tekkou_studios/images/sugarcreekLogoFullpng.png"
+          "filePath": "plasmic/tekkou_studios/images/sugarcreekLogoFullPng.png"
         },
         {
           "id": "q0IuVAjTv",
@@ -821,12 +820,12 @@
         {
           "id": "SAZ6PEKTP",
           "name": "PosterSizeWallpaper.png",
-          "filePath": "plasmic/tekkou_studios/images/posterSizeWallpaperpng.png"
+          "filePath": "plasmic/tekkou_studios/images/posterSizeWallpaperPng.png"
         },
         {
           "id": "KXD4z3Dte",
           "name": "TrailerThumbnail.png",
-          "filePath": "plasmic/tekkou_studios/images/trailerThumbnailpng.png"
+          "filePath": "plasmic/tekkou_studios/images/trailerThumbnailPng.png"
         },
         {
           "id": "5hrFBOIeg",
@@ -846,7 +845,7 @@
         {
           "id": "m1TddFjyY",
           "name": "FullArtCharlotteRoom.png",
-          "filePath": "plasmic/tekkou_studios/images/fullArtCharlotteRoompng.png"
+          "filePath": "plasmic/tekkou_studios/images/fullArtCharlotteRoomPng.png"
         },
         {
           "id": "gQ3zp1ER7",
@@ -861,32 +860,32 @@
         {
           "id": "tirv03UFV",
           "name": "CPEddie.png",
-          "filePath": "plasmic/tekkou_studios/images/cpEddiepng.png"
+          "filePath": "plasmic/tekkou_studios/images/cpEddiePng.png"
         },
         {
           "id": "wzK18mKug",
           "name": "CPFelix.png",
-          "filePath": "plasmic/tekkou_studios/images/cpFelixpng.png"
+          "filePath": "plasmic/tekkou_studios/images/cpFelixPng.png"
         },
         {
           "id": "DglUpQH0U",
           "name": "CPDarby.png",
-          "filePath": "plasmic/tekkou_studios/images/cpDarbypng.png"
+          "filePath": "plasmic/tekkou_studios/images/cpDarbyPng.png"
         },
         {
           "id": "iz2k4eDfP",
           "name": "CPCharlotte.png",
-          "filePath": "plasmic/tekkou_studios/images/cpCharlottepng.png"
+          "filePath": "plasmic/tekkou_studios/images/cpCharlottePng.png"
         },
         {
           "id": "RnjrXdekS",
           "name": "Faces.png",
-          "filePath": "plasmic/tekkou_studios/images/facespng.png"
+          "filePath": "plasmic/tekkou_studios/images/facesPng.png"
         },
         {
           "id": "jWZ_wq6Co",
           "name": "LogoWhite.png",
-          "filePath": "plasmic/tekkou_studios/images/logoWhitepng.png"
+          "filePath": "plasmic/tekkou_studios/images/logoWhitePng.png"
         },
         {
           "id": "MElD3RVyO",
@@ -921,12 +920,12 @@
         {
           "id": "7iH1gIvZnfRZ",
           "name": "Sugarcreek Logo Shadow.png",
-          "filePath": "plasmic/tekkou_studios/images/sugarcreekLogoShadowpng.png"
+          "filePath": "plasmic/tekkou_studios/images/sugarcreekLogoShadowPng.png"
         },
         {
           "id": "IYJtPZ5c1EYq",
           "name": "NENStarshineEditionLogoText.png",
-          "filePath": "plasmic/tekkou_studios/images/nenStarshineEditionLogoTextpng.png"
+          "filePath": "plasmic/tekkou_studios/images/nenStarshineEditionLogoTextPng.png"
         },
         {
           "id": "Lf_fGCKgYYiu",
@@ -936,7 +935,7 @@
         {
           "id": "0hMl1GXTxKk8",
           "name": "UgneStill.png",
-          "filePath": "plasmic/tekkou_studios/images/ugneStillpng.png"
+          "filePath": "plasmic/tekkou_studios/images/ugneStillPng.png"
         },
         {
           "id": "7fz0DKFJPKcW",
@@ -956,7 +955,7 @@
         {
           "id": "bU8IgN_zCOOO",
           "name": "FullArtHangoutCityPark.png",
-          "filePath": "plasmic/tekkou_studios/images/fullArtHangoutCityParkpng.png"
+          "filePath": "plasmic/tekkou_studios/images/fullArtHangoutCityParkPng.png"
         },
         {
           "id": "IK70pn6JiKkk",
@@ -1041,7 +1040,7 @@
         {
           "id": "9Oji3Zo65shj",
           "name": "ConceptArt-Promo-KeyArt3-1-NoBackground.gif",
-          "filePath": "plasmic/tekkou_studios/images/conceptArtPromoKeyArt31NoBackgroundgif.gif"
+          "filePath": "plasmic/tekkou_studios/images/conceptArtPromoKeyArt31NoBackgroundGif.gif"
         },
         {
           "id": "ixKwfKbWQEkP",
@@ -1051,7 +1050,7 @@
         {
           "id": "T0ciH1m-hOLq",
           "name": "WebCover.png",
-          "filePath": "plasmic/tekkou_studios/images/webCoverpng.png"
+          "filePath": "plasmic/tekkou_studios/images/webCoverPng.png"
         }
       ],
       "indirect": false,
@@ -1088,6 +1087,6 @@
   "gatsbyConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.330",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.330/dist/plasmic.schema.json"
+  "cliVersion": "0.1.334",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.334/dist/plasmic.schema.json"
 }

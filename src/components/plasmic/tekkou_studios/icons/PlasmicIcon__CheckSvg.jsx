@@ -5,7 +5,7 @@
 import React from "react";
 import { classNames } from "@plasmicapp/react-web";
 
-export function QuotessvgIcon(props) {
+export function CheckSvgIcon(props) {
   const { className, style, title, ...restProps } = props;
   return (
     <svg
@@ -24,8 +24,10 @@ export function QuotessvgIcon(props) {
       {title && <title>{title}</title>}
 
       <path
+        fillRule={"evenodd"}
+        clipRule={"evenodd"}
         d={
-          "M0 14.182L4.571 0h4.953l-3.81 13.29h3.81V24H0v-9.818zm14.476 0L19.048 0H24l-3.81 13.29H24V24h-9.524v-9.818z"
+          "M18.416 5.876a.75.75 0 01.208 1.04L11.42 17.721a1.75 1.75 0 01-2.871.06l-3.156-4.34a.75.75 0 111.214-.882l3.155 4.339a.25.25 0 00.41-.009l7.204-10.805a.75.75 0 011.04-.208z"
         }
         fill={"currentColor"}
       ></path>
@@ -33,5 +35,5 @@ export function QuotessvgIcon(props) {
   );
 }
 
-export default QuotessvgIcon;
+export default CheckSvgIcon;
 /* prettier-ignore-end */

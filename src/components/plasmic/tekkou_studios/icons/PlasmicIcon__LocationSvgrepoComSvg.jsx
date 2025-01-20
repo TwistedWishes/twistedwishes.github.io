@@ -5,7 +5,7 @@
 import React from "react";
 import { classNames } from "@plasmicapp/react-web";
 
-export function LocationSvgrepoComsvgIcon(props) {
+export function LocationSvgrepoComSvgIcon(props) {
   const { className, style, title, ...restProps } = props;
   return (
     <svg
@@ -41,5 +41,5 @@ export function LocationSvgrepoComsvgIcon(props) {
   );
 }
 
-export default LocationSvgrepoComsvgIcon;
+export default LocationSvgrepoComSvgIcon;
 /* prettier-ignore-end */

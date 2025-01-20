@@ -119,7 +119,7 @@
   position: relative;
   flex-direction: column;
   width: 100%;
-  background: url("./images/leafsvg.svg") top -470px right -220px / auto 1360px
+  background: url("./images/leafSvg.svg") top -470px right -220px / auto 1360px
       no-repeat padding-box border-box local,
     var(--token-csDjDcYHGOPBmv);
   min-width: 0;
@@ -145,7 +145,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox___0DR2 {
-    background: url("./images/leafsvg.svg") top -470px right -390px / auto
+    background: url("./images/leafSvg.svg") top -470px right -390px / auto
         1190px no-repeat padding-box border-box local,
       var(--token-csDjDcYHGOPBmv);
     padding: 70px 30px;

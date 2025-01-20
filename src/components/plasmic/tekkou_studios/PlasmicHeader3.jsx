@@ -27,7 +27,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
 import * as sty from "./PlasmicHeader3.module.css"; // plasmic-import: e6bVodJbS1czUe/css
-import LogoWhitesvgIcon from "./icons/PlasmicIcon__LogoWhitesvg"; // plasmic-import: U4HHM8rDMXQhVG/icon
+import LogoWhiteSvgIcon from "./icons/PlasmicIcon__LogoWhiteSvg"; // plasmic-import: U4HHM8rDMXQhVG/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: GBu9tlyNK1_c67/icon
 
 createPlasmicElementProxy;
@@ -40,7 +40,16 @@ const $$ = {};
 
 function PlasmicHeader3__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -75,7 +84,7 @@ function PlasmicHeader3__RenderFunc(props) {
         className={classNames("__wab_instance", sty.menuButton)}
       />
 
-      <LogoWhitesvgIcon
+      <LogoWhiteSvgIcon
         className={classNames(projectcss.all, sty.svg__ifSFc)}
         role={"img"}
       />

@@ -26,10 +26,10 @@ import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_colo
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
 import * as sty from "./PlasmicProductRow.module.css"; // plasmic-import: sTLuxFVr-H4nw4/css
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 0VwAWSlI1cyKAc/icon
-import plant1FeaturedjpgXJ6Q3VVMrm0Gt from "./images/plant1Featuredjpg.png"; // plasmic-import: xJ6Q3vV_MRM0GT/picture
-import plant2FeaturedjpgT2YarasV6KLkUc from "./images/plant2Featuredjpg.png"; // plasmic-import: t2yarasV6KLkUc/picture
-import plant5FeaturedjpgTiViCtWpbB5Dd from "./images/plant5Featuredjpg.png"; // plasmic-import: tiViCTWpbB5dd_/picture
-import plant9FeaturedjpgIEz5Kdu77KUzPs from "./images/plant9Featuredjpg.png"; // plasmic-import: IEz5kdu77KUzPS/picture
+import plant1FeaturedJpgXJ6Q3VVMrm0Gt from "./images/plant1FeaturedJpg.png"; // plasmic-import: xJ6Q3vV_MRM0GT/picture
+import plant2FeaturedJpgT2YarasV6KLkUc from "./images/plant2FeaturedJpg.png"; // plasmic-import: t2yarasV6KLkUc/picture
+import plant5FeaturedJpgTiViCtWpbB5Dd from "./images/plant5FeaturedJpg.png"; // plasmic-import: tiViCTWpbB5dd_/picture
+import plant9FeaturedJpgIEz5Kdu77KUzPs from "./images/plant9FeaturedJpg.png"; // plasmic-import: IEz5kdu77KUzPS/picture
 
 createPlasmicElementProxy;
 
@@ -41,7 +41,16 @@ const $$ = {};
 
 function PlasmicProductRow__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -86,7 +95,7 @@ function PlasmicProductRow__RenderFunc(props) {
           displayWidth={"100%"}
           loading={"lazy"}
           src={{
-            src: plant1FeaturedjpgXJ6Q3VVMrm0Gt,
+            src: plant1FeaturedJpgXJ6Q3VVMrm0Gt,
             fullWidth: 400,
             fullHeight: 400,
             aspectRatio: undefined
@@ -149,7 +158,7 @@ function PlasmicProductRow__RenderFunc(props) {
           displayWidth={"100%"}
           loading={"lazy"}
           src={{
-            src: plant2FeaturedjpgT2YarasV6KLkUc,
+            src: plant2FeaturedJpgT2YarasV6KLkUc,
             fullWidth: 400,
             fullHeight: 400,
             aspectRatio: undefined
@@ -212,7 +221,7 @@ function PlasmicProductRow__RenderFunc(props) {
           displayWidth={"100%"}
           loading={"lazy"}
           src={{
-            src: plant5FeaturedjpgTiViCtWpbB5Dd,
+            src: plant5FeaturedJpgTiViCtWpbB5Dd,
             fullWidth: 400,
             fullHeight: 400,
             aspectRatio: undefined
@@ -275,7 +284,7 @@ function PlasmicProductRow__RenderFunc(props) {
           displayWidth={"100%"}
           loading={"lazy"}
           src={{
-            src: plant9FeaturedjpgIEz5Kdu77KUzPs,
+            src: plant9FeaturedJpgIEz5Kdu77KUzPs,
             fullWidth: 400,
             fullHeight: 400,
             aspectRatio: undefined

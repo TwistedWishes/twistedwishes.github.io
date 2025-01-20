@@ -39,7 +39,9 @@ function PlasmicIconLink__RenderFunc(props) {
         {
           href: "#"
         },
-        props.args
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
       ),
     [props.args]
   );

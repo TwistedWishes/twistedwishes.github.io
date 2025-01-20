@@ -33,10 +33,10 @@ import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_colo
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
 import * as sty from "./PlasmicAboutUs.module.css"; // plasmic-import: I5Q14DJIrh8zkA/css
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: 0VwAWSlI1cyKAc/icon
-import galinaNMiziNqvJx5MUnsplashjpgU3Z8JgzcZrmHl from "./images/galinaNMiziNqvJx5MUnsplashjpg.jpg"; // plasmic-import: u3z8jgzcZrmHl-/picture
-import igorSonFvPxCqgtwcUnsplashjpgYeiKuc4UsUOc5 from "./images/igorSonFvPxCqgtwcUnsplashjpg.jpg"; // plasmic-import: YEIKuc4Us-uOc5/picture
-import scottWebbORwRlTgBrPoUnsplashjpgF1Dc1RqcLUfMdJ from "./images/scottWebbORwRlTgBrPoUnsplashjpg.jpg"; // plasmic-import: F1Dc1rqcLUfMdJ/picture
-import freddieMarriageUcfKyTanLuUnsplashjpgQr2SCt8IrZrXZ from "./images/freddieMarriageUcfKyTanLuUnsplashjpg.jpg"; // plasmic-import: QR2sCt8irZr_xZ/picture
+import galinaNMiziNqvJx5MUnsplashJpgU3Z8JgzcZrmHl from "./images/galinaNMiziNqvJx5MUnsplashJpg.jpg"; // plasmic-import: u3z8jgzcZrmHl-/picture
+import igorSonFvPxCqgtwcUnsplashJpgYeiKuc4UsUOc5 from "./images/igorSonFvPxCqgtwcUnsplashJpg.jpg"; // plasmic-import: YEIKuc4Us-uOc5/picture
+import scottWebbORwRlTgBrPoUnsplashJpgF1Dc1RqcLUfMdJ from "./images/scottWebbORwRlTgBrPoUnsplashJpg.jpg"; // plasmic-import: F1Dc1rqcLUfMdJ/picture
+import freddieMarriageUcfKyTanLuUnsplashJpgQr2SCt8IrZrXZ from "./images/freddieMarriageUcfKyTanLuUnsplashJpg.jpg"; // plasmic-import: QR2sCt8irZr_xZ/picture
 import f2B5KNe2NkQlu4Yi from "./images/f2.jpg"; // plasmic-import: b5kNE2nkQLU4YI/picture
 import f3Z1Tdfnxb3V4H5T from "./images/f3.jpg"; // plasmic-import: Z1Tdfnxb3V4h5T/picture
 import f4UpCxJZtQkBmwy from "./images/f4.jpg"; // plasmic-import: UpCxJ-ZtQKBmwy/picture
@@ -56,8 +56,8 @@ import plant41JpgDrXI302Mcggq from "./images/plant41Jpg.png"; // plasmic-import:
 import plant31JpgY8QgmNoCoGRaU8 from "./images/plant31Jpg.png"; // plasmic-import: Y8qgmNoCoGRaU8/picture
 import plant9WebpBuUZlDvLXdwOt from "./images/plant9Webp.webp"; // plasmic-import: BU_UZlDvLXdwOT/picture
 import plant2WebpTwez09OFzcfPxW from "./images/plant2Webp.webp"; // plasmic-import: TWEZ09oFzcfPxW/picture
-import nanTalkwebp5PFeRGfvIyqjo from "./images/nanTalkwebp.webp"; // plasmic-import: 5P_FeRGfvIYQJO/picture
-import teamwebpJkVhXJc87CmYn from "./images/teamwebp.webp"; // plasmic-import: jkVhXJc87CmYn_/picture
+import nanTalkWebp5PFeRGfvIyqjo from "./images/nanTalkWebp.webp"; // plasmic-import: 5P_FeRGfvIYQJO/picture
+import teamWebpJkVhXJc87CmYn from "./images/teamWebp.webp"; // plasmic-import: jkVhXJc87CmYn_/picture
 
 createPlasmicElementProxy;
 
@@ -73,7 +73,16 @@ export function Head() {
 
 function PlasmicAboutUs__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -207,7 +216,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                       displayMinWidth={"0"}
                       displayWidth={"100%"}
                       src={{
-                        src: galinaNMiziNqvJx5MUnsplashjpgU3Z8JgzcZrmHl,
+                        src: galinaNMiziNqvJx5MUnsplashJpgU3Z8JgzcZrmHl,
                         fullWidth: 1920,
                         fullHeight: 1278,
                         aspectRatio: undefined
@@ -245,7 +254,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                       displayMinWidth={"0"}
                       displayWidth={"100%"}
                       src={{
-                        src: igorSonFvPxCqgtwcUnsplashjpgYeiKuc4UsUOc5,
+                        src: igorSonFvPxCqgtwcUnsplashJpgYeiKuc4UsUOc5,
                         fullWidth: 640,
                         fullHeight: 481,
                         aspectRatio: undefined
@@ -283,7 +292,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                       displayMinWidth={"0"}
                       displayWidth={"100%"}
                       src={{
-                        src: scottWebbORwRlTgBrPoUnsplashjpgF1Dc1RqcLUfMdJ,
+                        src: scottWebbORwRlTgBrPoUnsplashJpgF1Dc1RqcLUfMdJ,
                         fullWidth: 1920,
                         fullHeight: 1280,
                         aspectRatio: undefined
@@ -320,7 +329,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                       displayMinWidth={"0"}
                       displayWidth={"100%"}
                       src={{
-                        src: freddieMarriageUcfKyTanLuUnsplashjpgQr2SCt8IrZrXZ,
+                        src: freddieMarriageUcfKyTanLuUnsplashJpgQr2SCt8IrZrXZ,
                         fullWidth: 640,
                         fullHeight: 427,
                         aspectRatio: undefined
@@ -1292,7 +1301,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     displayWidth={"500px"}
                     loading={"lazy"}
                     src={{
-                      src: nanTalkwebp5PFeRGfvIyqjo,
+                      src: nanTalkWebp5PFeRGfvIyqjo,
                       fullWidth: 1000,
                       fullHeight: 1498,
                       aspectRatio: undefined
@@ -1391,7 +1400,7 @@ function PlasmicAboutUs__RenderFunc(props) {
                     }
                     loading={"lazy"}
                     src={{
-                      src: teamwebpJkVhXJc87CmYn,
+                      src: teamWebpJkVhXJc87CmYn,
                       fullWidth: 1368,
                       fullHeight: 2048,
                       aspectRatio: undefined

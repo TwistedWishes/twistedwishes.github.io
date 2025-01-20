@@ -39,20 +39,20 @@ import vlcsnap2024042307H49M54S791PngSX4OVnUrcJ5L from "./images/vlcsnap20240423
 import vlcsnap2024042307H52M24S723PngQExbDgiBUhhw from "./images/vlcsnap2024042307H52M24S723Png.png"; // plasmic-import: qExbDgiBUhhw/picture
 import vlcsnap2024042307H42M21S495Png5U7IUSxqFyll from "./images/vlcsnap2024042307H42M21S495Png.png"; // plasmic-import: 5u7iUSxqFyll/picture
 import tekkouLogoSeptember20234Png2MWgS6QoX0KP from "./images/tekkouLogoSeptember20234Png.png"; // plasmic-import: 2mWgS6qoX0kP/picture
-import sugarcreekLogoFullpngDBkCf3AHj from "./images/sugarcreekLogoFullpng.png"; // plasmic-import: DBkCf3AHj/picture
+import sugarcreekLogoFullPngDBkCf3AHj from "./images/sugarcreekLogoFullPng.png"; // plasmic-import: DBkCf3AHj/picture
 import vlcsnap2023052317H36M59S219PngMElD3RVyO from "./images/vlcsnap2023052317H36M59S219Png.png"; // plasmic-import: MElD3RVyO/picture
 import vlcsnap2023051621H15M04S666PngDfU4PMeQg from "./images/vlcsnap2023051621H15M04S666Png.png"; // plasmic-import: DfU4pMeQG/picture
 import vlcsnap2022091200H37M57S255PngTLYeAmYx from "./images/vlcsnap2022091200H37M57S255Png.png"; // plasmic-import: tLYeAm_yx/picture
 import vlcsnap2023040502H20M56S405PngLCEg1C7K from "./images/vlcsnap2023040502H20M56S405Png.png"; // plasmic-import: -lCEg1c7k/picture
-import nenStarshineEditionLogoTextpngIyJtPz5C1EYq from "./images/nenStarshineEditionLogoTextpng.png"; // plasmic-import: IYJtPZ5c1EYq/picture
+import nenStarshineEditionLogoTextPngIyJtPz5C1EYq from "./images/nenStarshineEditionLogoTextPng.png"; // plasmic-import: IYJtPZ5c1EYq/picture
 import screenshot33PngLfFGcKgYYiu from "./images/screenshot33Png.png"; // plasmic-import: Lf_fGCKgYYiu/picture
-import ugneStillpng0HMl1GxTxKk8 from "./images/ugneStillpng.png"; // plasmic-import: 0hMl1GXTxKk8/picture
+import ugneStillPng0HMl1GxTxKk8 from "./images/ugneStillPng.png"; // plasmic-import: 0hMl1GXTxKk8/picture
 import vlcsnap2023110717H50M56S704PngUjDPtU2AQWqb from "./images/vlcsnap2023110717H50M56S704Png.png"; // plasmic-import: ujDPtU2aQWqb/picture
 import screenshot37Png7Fz0DkfjpKcW from "./images/screenshot37Png.png"; // plasmic-import: 7fz0DKFJPKcW/picture
-import galinaNMiziNqvJx5MUnsplashjpgU3Z8JgzcZrmHl from "./images/galinaNMiziNqvJx5MUnsplashjpg.jpg"; // plasmic-import: u3z8jgzcZrmHl-/picture
-import igorSonFvPxCqgtwcUnsplashjpgYeiKuc4UsUOc5 from "./images/igorSonFvPxCqgtwcUnsplashjpg.jpg"; // plasmic-import: YEIKuc4Us-uOc5/picture
-import scottWebbORwRlTgBrPoUnsplashjpgF1Dc1RqcLUfMdJ from "./images/scottWebbORwRlTgBrPoUnsplashjpg.jpg"; // plasmic-import: F1Dc1rqcLUfMdJ/picture
-import freddieMarriageUcfKyTanLuUnsplashjpgQr2SCt8IrZrXZ from "./images/freddieMarriageUcfKyTanLuUnsplashjpg.jpg"; // plasmic-import: QR2sCt8irZr_xZ/picture
+import galinaNMiziNqvJx5MUnsplashJpgU3Z8JgzcZrmHl from "./images/galinaNMiziNqvJx5MUnsplashJpg.jpg"; // plasmic-import: u3z8jgzcZrmHl-/picture
+import igorSonFvPxCqgtwcUnsplashJpgYeiKuc4UsUOc5 from "./images/igorSonFvPxCqgtwcUnsplashJpg.jpg"; // plasmic-import: YEIKuc4Us-uOc5/picture
+import scottWebbORwRlTgBrPoUnsplashJpgF1Dc1RqcLUfMdJ from "./images/scottWebbORwRlTgBrPoUnsplashJpg.jpg"; // plasmic-import: F1Dc1rqcLUfMdJ/picture
+import freddieMarriageUcfKyTanLuUnsplashJpgQr2SCt8IrZrXZ from "./images/freddieMarriageUcfKyTanLuUnsplashJpg.jpg"; // plasmic-import: QR2sCt8irZr_xZ/picture
 import f2B5KNe2NkQlu4Yi from "./images/f2.jpg"; // plasmic-import: b5kNE2nkQLU4YI/picture
 import f3Z1Tdfnxb3V4H5T from "./images/f3.jpg"; // plasmic-import: Z1Tdfnxb3V4h5T/picture
 import f4UpCxJZtQkBmwy from "./images/f4.jpg"; // plasmic-import: UpCxJ-ZtQKBmwy/picture
@@ -95,7 +95,16 @@ export function Head() {
 
 function PlasmicTekkouStudios__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -396,7 +405,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     displayWidth={"1075px"}
                     loading={"lazy"}
                     src={{
-                      src: sugarcreekLogoFullpngDBkCf3AHj,
+                      src: sugarcreekLogoFullPngDBkCf3AHj,
                       fullWidth: 3586,
                       fullHeight: 697,
                       aspectRatio: undefined
@@ -603,7 +612,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                     displayWidth={"1075px"}
                     loading={"lazy"}
                     src={{
-                      src: nenStarshineEditionLogoTextpngIyJtPz5C1EYq,
+                      src: nenStarshineEditionLogoTextPngIyJtPz5C1EYq,
                       fullWidth: 2221,
                       fullHeight: 744,
                       aspectRatio: undefined
@@ -642,7 +651,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: ugneStillpng0HMl1GxTxKk8,
+                        src: ugneStillPng0HMl1GxTxKk8,
                         fullWidth: 1920,
                         fullHeight: 1080,
                         aspectRatio: undefined
@@ -854,7 +863,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       displayMinWidth={"0"}
                       displayWidth={"100%"}
                       src={{
-                        src: galinaNMiziNqvJx5MUnsplashjpgU3Z8JgzcZrmHl,
+                        src: galinaNMiziNqvJx5MUnsplashJpgU3Z8JgzcZrmHl,
                         fullWidth: 1920,
                         fullHeight: 1278,
                         aspectRatio: undefined
@@ -892,7 +901,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       displayMinWidth={"0"}
                       displayWidth={"100%"}
                       src={{
-                        src: igorSonFvPxCqgtwcUnsplashjpgYeiKuc4UsUOc5,
+                        src: igorSonFvPxCqgtwcUnsplashJpgYeiKuc4UsUOc5,
                         fullWidth: 640,
                         fullHeight: 481,
                         aspectRatio: undefined
@@ -930,7 +939,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       displayMinWidth={"0"}
                       displayWidth={"100%"}
                       src={{
-                        src: scottWebbORwRlTgBrPoUnsplashjpgF1Dc1RqcLUfMdJ,
+                        src: scottWebbORwRlTgBrPoUnsplashJpgF1Dc1RqcLUfMdJ,
                         fullWidth: 1920,
                         fullHeight: 1280,
                         aspectRatio: undefined
@@ -964,7 +973,7 @@ function PlasmicTekkouStudios__RenderFunc(props) {
                       displayMinWidth={"0"}
                       displayWidth={"100%"}
                       src={{
-                        src: freddieMarriageUcfKyTanLuUnsplashjpgQr2SCt8IrZrXZ,
+                        src: freddieMarriageUcfKyTanLuUnsplashJpgQr2SCt8IrZrXZ,
                         fullWidth: 640,
                         fullHeight: 427,
                         aspectRatio: undefined

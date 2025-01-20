@@ -28,8 +28,8 @@ import * as plasmic_library_plasmic_color_type_css from "../library_plasmic_colo
 import * as projectcss from "./plasmic_tekkou_studios.module.css"; // plasmic-import: pxrbsjdrcYiKeJrrydSqC9/projectcss
 import * as sty from "./PlasmicFaqFooter.module.css"; // plasmic-import: uRTKM-ijPWR4nr/css
 import LocationSvgrepoCom1SvgIcon from "./icons/PlasmicIcon__LocationSvgrepoCom1Svg"; // plasmic-import: sTg6IS6-2Zvsfi/icon
-import LogoWhitesvgIcon from "./icons/PlasmicIcon__LogoWhitesvg"; // plasmic-import: U4HHM8rDMXQhVG/icon
-import promowebpVSvYgMiuzEbT from "./images/promowebp.webp"; // plasmic-import: V_SvYGMiuzEbT-/picture
+import LogoWhiteSvgIcon from "./icons/PlasmicIcon__LogoWhiteSvg"; // plasmic-import: U4HHM8rDMXQhVG/icon
+import promoWebpVSvYgMiuzEbT from "./images/promoWebp.webp"; // plasmic-import: V_SvYGMiuzEbT-/picture
 
 createPlasmicElementProxy;
 
@@ -41,7 +41,16 @@ const $$ = {};
 
 function PlasmicFaqFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
+      ),
+    [props.args]
+  );
   const $props = {
     ...args,
     ...variants
@@ -84,7 +93,7 @@ function PlasmicFaqFooter__RenderFunc(props) {
               displayWidth={"947px"}
               loading={"lazy"}
               src={{
-                src: promowebpVSvYgMiuzEbT,
+                src: promoWebpVSvYgMiuzEbT,
                 fullWidth: 720,
                 fullHeight: 525,
                 aspectRatio: undefined
@@ -213,7 +222,7 @@ function PlasmicFaqFooter__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__umg3)}
             >
-              <LogoWhitesvgIcon
+              <LogoWhiteSvgIcon
                 className={classNames(projectcss.all, sty.svg__rNi9E)}
                 role={"img"}
               />
